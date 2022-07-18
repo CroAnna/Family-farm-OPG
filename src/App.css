@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Quicksand&display=swap");
 :root {
   --darkgreen: #94b49f;
   --lightgreen: #cee5d0;
@@ -12,9 +13,56 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
 }
 
 body {
   background-color: var(--cream);
+}
+
+.header h1 {
+  font-family: "Gloria Hallelujah", cursive;
+  text-align: center;
+  margin: 10px 10px 0 10px;
+}
+
+.header h3 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.nav-bar {
+  background-color: var(--lightgreen);
+  color: var(--grey);
+  z-index: 1;
+  margin: 10px auto;
+  width: 90%;
+  padding: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-bar li {
+  list-style-type: none;
+  display: block;
+}
+
+.nav-bar nav {
+  text-decoration: none;
+}
+
+.nav-bar .icon {
+  position: absolute;
+  right: 10px;
+  padding: 0 15px;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.hidden {
+  visibility: hidden;
+  display: none;
 }
 /*# sourceMappingURL=App.css.map */
