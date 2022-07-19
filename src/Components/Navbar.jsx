@@ -6,6 +6,9 @@ const Navbar = ({ openNav, setOpenNav }) => {
   const navHandler = () => {
     setOpenNav(!openNav);
   };
+  const closeHandler = () => {
+    setOpenNav(false);
+  };
   return (
     <div className="nav-bar">
       <div>
@@ -23,9 +26,21 @@ const Navbar = ({ openNav, setOpenNav }) => {
       <div>
         <nav className={openNav ? "nav-bar" : "hidden"}>
           <ul>
-            <li>Početna</li>
-            <li>O nama</li>
-            <li>Kontakt</li>
+            <li>
+              <a href="#top" onClick={closeHandler}>
+                Početna
+              </a>
+            </li>
+            <li>
+              <a href="./#proizvodi" onClick={closeHandler}>
+                Proizvodi
+              </a>
+            </li>
+            <li>
+              <a href="#" onClick={closeHandler}>
+                Kontakt
+              </a>
+            </li>
           </ul>
         </nav>
       </div>

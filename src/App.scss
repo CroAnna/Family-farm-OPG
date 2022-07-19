@@ -58,9 +58,15 @@ body {
     margin-bottom: 20px;
     & li {
       list-style: none;
-      padding: 20px;
+
       text-align: center;
       font-size: x-large;
+      & a {
+        padding: 20px;
+        width: 100%;
+        // background-color: #ecb390;
+        display: block;
+      }
       &:hover {
         background-color: var(--darkgreen);
         transition: 0.5s;
@@ -114,7 +120,7 @@ body {
     // color: var(--cream);
     color: var(--grey);
     // text-shadow: 2px 2px 5px var(--grey);
-    text-shadow: 2px 1px 2px var(--grey);
+    text-shadow: 21x 1px 2px var(--grey);
   }
 }
 
@@ -123,7 +129,23 @@ body {
   & .detaljnije-image {
     width: 100%;
     border-radius: 10px;
+    margin-top: 10px;
   }
+}
+
+.footer {
+  background-color: var(--grey);
+  font-size: 20px;
+  padding: 20px 20px 30px 20px;
+  & p {
+    padding: 10px;
+    color: var(--cream);
+  }
+}
+
+a {
+  text-decoration: none;
+  color: var(--grey);
 }
 
 // DESKTOP
