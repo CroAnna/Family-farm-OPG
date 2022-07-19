@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Quicksand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Montserrat&family=Quicksand&display=swap");
 
 :root {
   --darkgreen: #94b49f;
@@ -36,7 +36,7 @@ body {
       z-index: 1;
     }
     &.fixed {
-      position: fixed;
+      position: absolute;
     }
     background-color: var(--grey);
     width: 20px;
@@ -52,23 +52,25 @@ body {
   & .nav-bar {
     background-color: var(--lightgreen);
     position: relative;
-    // display: flex;
   }
   & ul {
     background-color: var(--lightgreen);
     margin-bottom: 20px;
-    // position: absolute;
     & li {
       list-style: none;
       padding: 20px;
-      // justify-content: center;
       text-align: center;
       font-size: x-large;
+      &:hover {
+        background-color: var(--darkgreen);
+        transition: 0.5s;
+      }
     }
   }
   & .cover {
     position: relative;
     text-align: center;
+
     & img {
       width: 100%;
     }
@@ -88,4 +90,59 @@ body {
 .hidden {
   visibility: hidden;
   display: none;
+}
+
+.images-container {
+  position: relative;
+  margin: 10px;
+  // background-color: var(--orange);
+  border-radius: 15px;
+
+  & .images {
+    padding: 10px;
+  }
+  & img {
+    width: 100%;
+    border-radius: 10px;
+    padding: 5px;
+  }
+  & h2 {
+    font-size: 8vw;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    padding-top: 15px;
+    // color: var(--cream);
+    color: var(--grey);
+    // text-shadow: 2px 2px 5px var(--grey);
+    text-shadow: 2px 1px 2px var(--grey);
+  }
+}
+
+.detaljnije {
+  margin: 35px;
+  & .detaljnije-image {
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+
+// DESKTOP
+@media screen and (min-width: 961px) {
+  .images-container {
+    width: 80%;
+    margin: 80px auto;
+
+    & h2 {
+      font-size: 5vw;
+    }
+    & img {
+      width: 33%;
+    }
+  }
+
+  .detaljnije {
+    & .detaljnije-image {
+      width: 20%;
+    }
+  }
 }
