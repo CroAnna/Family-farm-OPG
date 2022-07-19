@@ -33,11 +33,14 @@ const Header = ({ openNav, setOpenNav }) => {
           </nav>
         </div>
       </div>
-
+      <h1>OPG Škarica</h1>
+      <h3>Samo najbolje neki tu tekst</h3>
       <div className="cover">
-        <h1>OPG Škarica</h1>
-        <h3>Samo najbolje neki tu tekst</h3>
-        {/* <img src={slika} alt="" /> */}
+        <img src={slika} alt="" />
+        <h2>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu
+          bibendum dolor.
+        </h2>
       </div>
     </div>
   );

@@ -47,6 +47,7 @@ body {
     border-radius: 10px;
     margin-left: 10px;
     margin-top: 10px;
+    cursor: pointer;
   }
   & .nav-bar {
     background-color: var(--lightgreen);
@@ -65,18 +66,23 @@ body {
       font-size: x-large;
     }
   }
-  // & .cover {
-  //   width: 100%;
-  //   height: 200px;
-
-  //   & img {
-  //     // width: fit-content;
-  //     height: 300px;
-  //     // justify-content: center;
-  //     overflow: hidden;
-  //     width: 100%;
-  //   }
-  // }
+  & .cover {
+    position: relative;
+    text-align: center;
+    & img {
+      width: 100%;
+    }
+    & h2 {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: var(--cream);
+      text-transform: uppercase;
+      font-size: 4vw;
+      width: 80%;
+    }
+  }
 }
 
 .hidden {
