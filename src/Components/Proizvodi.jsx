@@ -3,6 +3,7 @@ import corn from "../Images/corn.jpg";
 import batat from "../Images/batat.jpg";
 import eggs from "../Images/eggs.jpg";
 import Proizvod from "./Proizvod";
+
 const Proizvodi = () => {
   const [proizvodi, setProizvode] = useState([
     {

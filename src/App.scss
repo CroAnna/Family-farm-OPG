@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Montserrat&family=Quicksand&display=swap");
 
+// DODAJ KARTU, FORMU ZA MAIL
+
 :root {
   --darkgreen: #94b49f;
   --lightgreen: #cee5d0;
@@ -64,7 +66,6 @@ body {
       & a {
         padding: 20px;
         width: 100%;
-        // background-color: #ecb390;
         display: block;
       }
       &:hover {
@@ -101,7 +102,6 @@ body {
 .images-container {
   position: relative;
   margin: 10px;
-  // background-color: var(--orange);
   border-radius: 15px;
 
   & .images {
@@ -117,9 +117,7 @@ body {
     font-family: "Montserrat", sans-serif;
     text-align: center;
     padding-top: 15px;
-    // color: var(--cream);
     color: var(--grey);
-    // text-shadow: 2px 2px 5px var(--grey);
     text-shadow: 21x 1px 2px var(--grey);
   }
 }
@@ -146,6 +144,33 @@ body {
 a {
   text-decoration: none;
   color: var(--grey);
+}
+.location-container {
+  background-color: var(--grey);
+  color: var(--cream);
+  margin: 0 auto;
+
+  & .info {
+    font-size: 3vw;
+    width: 80%;
+    margin: 10px auto;
+    & .icon {
+      float: left;
+    }
+    & h3 {
+      font-size: 4vw;
+    }
+  }
+  & .map {
+    width: 80%;
+    margin: 10px auto;
+    background-color: var(--grey);
+    height: 600px;
+    padding-bottom: 50px;
+    & .slika {
+      height: 160px;
+    }
+  }
 }
 
 // DESKTOP
