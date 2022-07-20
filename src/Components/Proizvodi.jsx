@@ -31,7 +31,7 @@ const Proizvodi = () => {
 
   return (
     <div>
-      <div className="proizvodi-container">
+      <div className="proizvodi-container" id="proizvodi">
         {proizvodi.map((proizvod, index) => (
           <Proizvod
             name={proizvod.name}

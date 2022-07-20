@@ -7,6 +7,7 @@
   --lightgreen: #cee5d0;
   --cream: #fcf8e8;
   --orange: #ecb390;
+  --orangestrong: #e9894e;
   --grey: #383838;
 }
 
@@ -143,7 +144,7 @@ body {
     padding-bottom: 15px;
   }
   & p {
-    padding: 5px;
+    padding: 7px;
   }
 }
 
@@ -154,6 +155,9 @@ body {
   & p {
     padding: 10px;
     color: var(--cream);
+  }
+  & span {
+    color: var(--orange);
   }
 }
 
@@ -211,6 +215,56 @@ a {
     padding-bottom: 50px;
     & .slika {
       height: 160px;
+    }
+  }
+}
+
+#kontakt {
+  margin: 50px auto;
+
+  & h2 {
+    text-align: center;
+    font-size: 40px;
+  }
+
+  & form {
+    & input {
+      display: block;
+      margin: 20px auto;
+      padding: 24px;
+      border: 2px solid var(--darkgreen);
+      border-radius: 4px;
+      min-width: 80%;
+    }
+
+    & textarea {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 10px 10px 20px;
+      border: 2px solid var(--darkgreen);
+      border-radius: 4px;
+      min-width: 80%;
+    }
+
+    & ::placeholder {
+      font-size: 24px;
+    }
+
+    & button {
+      font-size: 30px;
+      width: 45%;
+      border-radius: 10px;
+      padding: 15px;
+      background-color: var(--orange);
+      color: var(--grey);
+      font-weight: 900;
+      display: block;
+      margin: 20px auto;
+      &:hover {
+        background-color: var(--orangestrong);
+        transform: scale(1.1);
+        transition: 0.3s ease-in;
+      }
     }
   }
 }
@@ -276,6 +330,13 @@ a {
       & .info-phone {
         padding: 10px;
       }
+    }
+  }
+
+  #kontakt {
+    & form {
+      width: 800px;
+      margin: 20px auto;
     }
   }
 }

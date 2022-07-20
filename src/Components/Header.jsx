@@ -6,7 +6,7 @@ const Header = ({ openNav, setOpenNav }) => {
   return (
     <div className="header">
       <Navbar openNav={openNav} setOpenNav={setOpenNav} />
-      <h1 id="top">OPG Škarica</h1>
+      <h1>OPG Škarica</h1>
       <h3>Samo najbolje neki tu tekst</h3>
       <div className="cover">
         <img src={slika} alt={slika} />

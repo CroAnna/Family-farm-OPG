@@ -11,7 +11,7 @@ const Location = () => {
     "//cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.4/images/"; // marker image
 
   return (
-    <div className="location-container">
+    <div className="location-container" id="lokacija">
       <div className="info">
         <div className="info-address">
           <span className="icon">

@@ -26,18 +26,19 @@ const Navbar = ({ openNav, setOpenNav }) => {
       <div>
         <nav className={openNav ? "nav-bar" : "hidden"}>
           <ul>
-            <li>
-              <a href="#top" onClick={closeHandler}>
-                Početna
-              </a>
-            </li>
+            {" "}
             <li>
               <a href="./#proizvodi" onClick={closeHandler}>
                 Proizvodi
               </a>
             </li>
             <li>
-              <a href="#" onClick={closeHandler}>
+              <a href="./#lokacija" onClick={closeHandler}>
+                Lokacija
+              </a>
+            </li>
+            <li>
+              <a href="./#kontakt" onClick={closeHandler}>
                 Kontakt
               </a>
             </li>
