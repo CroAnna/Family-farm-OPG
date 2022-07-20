@@ -151,16 +151,42 @@ a {
   margin: 0 auto;
 
   & .info {
-    font-size: 3vw;
+    font-size: 4vw;
     width: 80%;
-    margin: 10px auto;
+    margin: 40px auto;
+    padding-top: 50px;
+    color: var(--orange);
+
     & .icon {
+      margin-top: 3px;
       float: left;
     }
+
     & h3 {
-      font-size: 4vw;
+      font-size: 5vw;
+    }
+
+    & p {
+      padding-left: 50px;
+    }
+
+    & .info-address {
+      padding-bottom: 10px;
+
+      & h3 {
+        font-size: 7vw;
+        color: var(--cream);
+      }
+      & .icon {
+        margin-top: 13px;
+      }
+    }
+
+    & .info-phone {
+      color: var(--orange);
     }
   }
+
   & .map {
     width: 80%;
     margin: 10px auto;
@@ -190,6 +216,43 @@ a {
   .detaljnije {
     & .detaljnije-image {
       width: 20%;
+    }
+  }
+  .location-container {
+    & .info {
+      font-size: 2vw;
+      width: 80%;
+      margin: 40px auto;
+      padding-top: 50px;
+
+      & .icon {
+        float: left;
+      }
+
+      & h3 {
+        font-size: 2vw;
+      }
+
+      & .info-address {
+        display: flex;
+        padding: 10px;
+        & h3 {
+          font-size: 2vw;
+        }
+        & p {
+          width: auto;
+          padding-left: 10px;
+          padding-top: 10px;
+          font-size: 1.5vw;
+        }
+        & .icon {
+          margin-top: 0px;
+        }
+      }
+
+      & .info-phone {
+        padding: 10px;
+      }
     }
   }
 }

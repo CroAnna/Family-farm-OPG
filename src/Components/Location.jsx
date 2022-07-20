@@ -3,7 +3,7 @@ import Leaflet from "leaflet";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import { faLocationDot, faPhone } from "@fortawesome/free-solid-svg-icons";
 
 const Location = () => {
   const position = [45.5105190562796, 15.693413086588];
@@ -13,12 +13,20 @@ const Location = () => {
   return (
     <div className="location-container">
       <div className="info">
-        <p className="icon">
-          <FontAwesomeIcon icon={faLocationDot}></FontAwesomeIcon>&nbsp;
-        </p>
-        <h3>Zamršje 35</h3>
-        <p> 47000 Karlovac</p>
-        <p>Hrvatska</p>
+        <div className="info-address">
+          <span className="icon">
+            <FontAwesomeIcon icon={faLocationDot}></FontAwesomeIcon>&nbsp;&nbsp;
+          </span>
+          <h3>Zamršje 35,</h3>
+          <p> 47000 Karlovac,</p>
+          <p>Hrvatska</p>
+        </div>
+        <div className="info-phone">
+          <span className="icon">
+            <FontAwesomeIcon icon={faPhone}></FontAwesomeIcon>&nbsp;&nbsp;
+          </span>
+          <h3> 091 123 1234</h3>
+        </div>
       </div>
 
       <div className="map">
