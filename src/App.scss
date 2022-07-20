@@ -77,7 +77,7 @@ body {
   & .cover {
     position: relative;
     text-align: center;
-
+    margin-bottom: 30px;
     & img {
       width: 100%;
     }
@@ -122,12 +122,28 @@ body {
   }
 }
 
+.proizvodi-container {
+  background-color: var(--darkgreen);
+  width: 90%;
+  margin: 0 auto;
+}
+
 .detaljnije {
-  margin: 35px;
+  margin: 15px;
+  color: var(--grey);
+  font-size: 18px;
+  padding: 20px;
+  background-color: var(--lightgreen);
   & .detaljnije-image {
     width: 100%;
     border-radius: 10px;
-    margin-top: 10px;
+  }
+  & h2 {
+    text-align: center;
+    padding-bottom: 15px;
+  }
+  & p {
+    padding: 5px;
   }
 }
 
@@ -201,6 +217,11 @@ a {
 
 // DESKTOP
 @media screen and (min-width: 961px) {
+  .header {
+    & .cover {
+      margin-bottom: 80px;
+    }
+  }
   .images-container {
     width: 80%;
     margin: 80px auto;
@@ -212,11 +233,13 @@ a {
       width: 33%;
     }
   }
-
+  .proizvodi-container {
+    display: flex;
+    padding: 15px;
+    border-radius: 30px;
+  }
   .detaljnije {
-    & .detaljnije-image {
-      width: 20%;
-    }
+    border-radius: 15px;
   }
   .location-container {
     & .info {

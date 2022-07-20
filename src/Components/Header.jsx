@@ -9,7 +9,7 @@ const Header = ({ openNav, setOpenNav }) => {
       <h1 id="top">OPG Škarica</h1>
       <h3>Samo najbolje neki tu tekst</h3>
       <div className="cover">
-        <img src={slika} alt="" />
+        <img src={slika} alt={slika} />
         <h2>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu
           bibendum dolor.

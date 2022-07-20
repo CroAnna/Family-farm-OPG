@@ -31,15 +31,7 @@ const Proizvodi = () => {
 
   return (
     <div>
-      <div className="images-container">
-        <h2 id="proizvodi">PROIZVODI</h2>
-        <div className="images">
-          <img src={batat} alt="" />
-          <img src={corn} alt="" />
-          <img src={eggs} alt="" />
-        </div>
-      </div>
-      <div>
+      <div className="proizvodi-container">
         {proizvodi.map((proizvod, index) => (
           <Proizvod
             name={proizvod.name}

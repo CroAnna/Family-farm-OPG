@@ -11,7 +11,6 @@ function App() {
   return (
     <div className="App">
       <Header openNav={openNav} setOpenNav={setOpenNav} />
-
       <Proizvodi />
       <Location />
       <Footer />
