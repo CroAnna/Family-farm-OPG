@@ -1,7 +1,12 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import emailjs from "emailjs-com";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Contact = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000, delay: 500 });
+  }, []);
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
@@ -23,12 +28,13 @@ const Contact = () => {
     form.current.reset();
   };
   return (
-    <div id="kontakt">
+    <div id="kontakt" data-aos="fade-down" data-aos-anchor=".t-area">
       <h2>Naruči odmah:</h2>
       <form onSubmit={sendEmail} ref={form}>
         <input type="text" name="name" placeholder="Ime i prezime:" />
         <input type="text" name="subject" placeholder="Naslov:" />
         <textarea
+          className="t-area"
           type="text"
           name="message"
           placeholder="Poruka:"

@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import corn from "../Images/corn.jpg";
 import batat from "../Images/batat.jpg";
 import eggs from "../Images/eggs.jpg";
-import butternut from "../Images/buternut.jpg";
-import hokkaido from "../Images/hokkaido.jpg";
 
 import Proizvod from "./Proizvod";
 

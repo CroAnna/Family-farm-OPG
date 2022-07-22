@@ -1,18 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Leaflet from "leaflet";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot, faPhone } from "@fortawesome/free-solid-svg-icons";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Location = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000, delay: 500 });
+  }, []);
   const position = [45.5105190562796, 15.693413086588];
   Leaflet.Icon.Default.imagePath =
     "//cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.4/images/"; // marker image
 
   return (
     <div className="location-container" id="lokacija">
-      <div className="info">
+      <div className="info" data-aos="fade-right" data-aos-anchor=".info-phone">
         <div className="info-address">
           <span className="icon">
             <FontAwesomeIcon icon={faLocationDot}></FontAwesomeIcon>&nbsp;&nbsp;
@@ -29,7 +34,7 @@ const Location = () => {
         </div>
       </div>
 
-      <div className="map">
+      <div className="map" data-aos="fade-left">
         <MapContainer
           center={position}
           zoom={15}
