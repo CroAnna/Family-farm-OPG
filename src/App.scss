@@ -136,6 +136,7 @@ body {
   padding: 20px;
   background-color: var(--lightgreen);
   & .detaljnije-image {
+    min-height: 240px; // dodaj sve slike iste velicine i makni ovo
     width: 100%;
     border-radius: 10px;
   }
@@ -235,6 +236,7 @@ a {
       border: 2px solid var(--darkgreen);
       border-radius: 4px;
       min-width: 80%;
+      font-size: 1.5rem;
     }
 
     & textarea {
@@ -244,6 +246,7 @@ a {
       border: 2px solid var(--darkgreen);
       border-radius: 4px;
       min-width: 80%;
+      font-size: 1.5rem;
     }
 
     & ::placeholder {
@@ -260,6 +263,7 @@ a {
       font-weight: 900;
       display: block;
       margin: 20px auto;
+      box-shadow: 2px 3px 4px;
       &:hover {
         background-color: var(--orangestrong);
         transform: scale(1.1);

@@ -31,7 +31,7 @@ const Contact = () => {
         <textarea
           type="text"
           name="message"
-          placeholder="Poruka"
+          placeholder="Poruka:"
           cols="20"
           rows="10"
         ></textarea>

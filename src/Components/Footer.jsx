@@ -7,14 +7,20 @@ const Footer = () => {
   return (
     <div className="footer">
       <p>Imate pitanja?</p>
-      <p>
-        <FontAwesomeIcon icon={faEnvelope} />
-        <span>&nbsp;&nbsp;opgskarica@gmail.com</span>
-      </p>
-      <p>
-        <FontAwesomeIcon icon={faInstagram} />
-        <span>&nbsp;&nbsp;@opgskarica</span>
-      </p>
+
+      <a href="mailto:opgskarica@gmail.com">
+        <p>
+          <FontAwesomeIcon icon={faEnvelope} />
+          <span>&nbsp;&nbsp;opgskarica@gmail.com</span>
+        </p>
+      </a>
+
+      <a href="https://www.instagram.com/">
+        <p>
+          <FontAwesomeIcon icon={faInstagram} />
+          <span>&nbsp;&nbsp;@opgskarica</span>
+        </p>
+      </a>
     </div>
   );
 };

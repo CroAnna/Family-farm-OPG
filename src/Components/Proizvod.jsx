@@ -5,7 +5,9 @@ const Proizvod = ({ name, price, about, image }) => {
     <div className="detaljnije">
       <h2>{name}</h2>
       <img src={image} alt={image} className="detaljnije-image" />
-      <p>Cijena: {price}</p>
+      <p>
+        Cijena: <b>{price}</b>
+      </p>
       <p>O proizvodu: {about}</p>
     </div>
   );
