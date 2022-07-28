@@ -1,6 +1,8 @@
 import React from "react";
 import Navbar from "./Navbar";
-import slika from "../Images/kokice.jpg";
+import slika from "../Images/kokosi.jpg";
+
+// mozda dodaj tu image slider onaj
 
 const Header = ({ openNav, setOpenNav }) => {
   return (

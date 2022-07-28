@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import corn from "../Images/corn.jpg";
 import batat from "../Images/batat.jpg";
-import eggs from "../Images/eggs.jpg";
+import eggs from "../Images/Jaja.jpg";
 
 import Proizvod from "./Proizvod";
 
@@ -12,21 +12,21 @@ const Proizvodi = () => {
       price: "17 kn/kg",
       about:
         "Donec quis aliquam velit, sit amet sodales justo. Proin quis consectetur diam. Cras ac urna tempor sem sollicitudin consequat sed rhoncus risus. Nunc sed fringilla mi, eget viverra erat. Nam non ex erat. Donec eu odio eget tellus viverra cursus. Pellentesque blandit ullamcorper eros et porta. Sed non nisl consequat, sagittis sem et, eleifend eros. ",
-      image: batat,
+      image: eggs,
     },
     {
       name: "Butternut tikve",
       price: "18 kn/kg",
       about:
         "Sed eu turpis ac massfasfasfsafawfwfafzsfa fringilla facilisis a ut enim. Ut id lacus congue, posuere enim id, efficitur quam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus ",
-      image: corn,
+      image: eggs,
     },
     {
       name: "Hokkaido tikve",
       price: "18 kn/kg",
       about:
         "Sed eu turpis ac massa fringilla facilisis a ut enim. Ut id lacus congue, posuere enim id, efficitur quam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus ",
-      image: corn,
+      image: eggs,
     },
     {
       name: "Jaja",
