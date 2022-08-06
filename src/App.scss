@@ -17,7 +17,14 @@
   padding: 0;
   box-sizing: border-box;
 
+  scrollbar-width: none; // firefox scrollbar
   font-family: "Quicksand", sans-serif;
+}
+
+::-webkit-scrollbar {
+  // chrome scrollbar
+  display: none;
+  overflow: hidden;
 }
 
 body {
