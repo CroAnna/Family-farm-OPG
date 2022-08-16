@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import corn from "../Images/corn.jpg";
-import batat from "../Images/batat.jpg";
 import eggs from "../Images/Jaja.jpg";
 
 import Proizvod from "./Proizvod";
@@ -9,30 +7,30 @@ const Proizvodi = () => {
   const [proizvodi, setProizvode] = useState([
     {
       name: "Batat",
-      price: "17 kn/kg",
+      price: "12 kn/kg",
       about:
-        "Donec quis aliquam velit, sit amet sodales justo. Proin quis consectetur diam. Cras ac urna tempor sem sollicitudin consequat sed rhoncus risus. Nunc sed fringilla mi, eget viverra erat. Nam non ex erat. Donec eu odio eget tellus viverra cursus. Pellentesque blandit ullamcorper eros et porta. Sed non nisl consequat, sagittis sem et, eleifend eros. ",
+        "Tzv. slatki krumpir, narančaste boje, koji je iznimno bogat vitaminima, mineralima i antioksidansima te je poznat svojim brojnim doprinosima u zdravlju crijeva, očiju, moždanim funkcijama i imunitetu. U usporedbi s običnim krumpirom ima manje ugljikohidrata i kalorija. Najzdraviji je bez da se guli, a priprema mu je raznolika: kao pire, umak, juha, kuhan, pečen, pržen - primjena mu je raznolika, kao i njegove zdravstvene prednosti. ",
       image: eggs,
     },
     {
       name: "Butternut tikve",
-      price: "18 kn/kg",
+      price: "4 kn/kg",
       about:
-        "Sed eu turpis ac massfasfasfsafawfwfafzsfa fringilla facilisis a ut enim. Ut id lacus congue, posuere enim id, efficitur quam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus ",
+        "Butternut tikva, bogata je vitaminima, mineralima i vlaknima. Njeno narančasto meso, slatkastog okusa podsjeća na lješnjak te je iz tog razloga savršen odabir za pripremu krem juha, pirea, pita te ostalih slatkih jela. Poznata je kao namirnica koja pomaže u skidanju kilograma zbog svoje niskokaloričnosti te ima protuupalno djelovanje.",
       image: eggs,
     },
     {
       name: "Hokkaido tikve",
       price: "18 kn/kg",
       about:
-        "Sed eu turpis ac massa fringilla facilisis a ut enim. Ut id lacus congue, posuere enim id, efficitur quam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus ",
+        "Ova se sorta smatra pravim blagom za ljubitelje bundeva, osim velike količine vitamina, aminokiselina i makronutrijenata, pogodna je i za dijetsku hranu te se odlično slaže s ostalim povrćem i mesom. Osim toga, bundeva ne gubi na vrijednosti ni nakon zamrzavanja što znači da možete dugo uživati u povrću.",
       image: eggs,
     },
     {
       name: "Jaja",
-      price: "18 kn/10 kom",
+      price: "20 kn/10 kom",
       about:
-        "Sed interdum mattis dictum. Proin sed leo a nibh pretium laoreet. In eget ex pretium, sodales dui sed, volutpat nisi. Vivamus vitae hendrerit purus, at pretium turpis. Curabitur nec volutpat justo. Etiam euismod, dolor quis blandit ullamcorper, tortor felis volutpat sem, in convallis tortor lectus ut metus. ",
+        "Svakodnevno svježa jaja, ubrana našim rukama tijekom cijelog dana. Naše kokoši slobodno šetaju u prirodnome okruženju, hrane se zrnjem iz lokalnog uzgoja, svježe pokošenom travom te ostalim kukcima na koje naiđu tijekom dana, spavaju zaštićene pod krovom, a od ranog jutra uživaju u slobodi i upijaju zrake sunca.",
       image: eggs,
     },
   ]);

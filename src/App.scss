@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Montserrat&family=Quicksand&display=swap");
 
-// DODAJ KARTU, FORMU ZA MAIL
+// dodaj ono animacija teksta da se mijenja na naslovnoj bez stetnih dodataka, korisne pri zdravlju il tak nekaj
+// dodaj druge slike
 
 :root {
   --darkgreen: #94b49f;
@@ -85,17 +86,15 @@ body {
   & .cover {
     position: relative;
     text-align: center;
-    margin-bottom: 30px;
     & img {
       width: 100%;
     }
     & h2 {
       position: absolute;
-      top: 30%;
+      top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       color: var(--cream);
-      text-transform: uppercase;
       font-size: 4vw;
       width: 80%;
     }
