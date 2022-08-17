@@ -9,7 +9,7 @@ import "aos/dist/aos.css";
 
 const Location = () => {
   useEffect(() => {
-    Aos.init({ duration: 2000, delay: 30 });
+    Aos.init({ duration: 1500, anchorPlacement: "top" });
   }, []);
   const position = [45.5105190562796, 15.693413086588];
   Leaflet.Icon.Default.imagePath =

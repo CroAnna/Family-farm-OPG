@@ -4,7 +4,7 @@ import "aos/dist/aos.css";
 
 const Proizvod = ({ name, price, about, image }) => {
   useEffect(() => {
-    Aos.init({ duration: 2000, offset: 300 });
+    Aos.init({ duration: 1500, offset: 0, anchorPlacement: "top" });
   }, []);
   return (
     <div className="detaljnije" data-aos="fade-up">
