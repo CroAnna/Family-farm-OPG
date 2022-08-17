@@ -30,7 +30,7 @@ const Contact = () => {
   return (
     <div id="kontakt" data-aos="fade-down" data-aos-anchor=".t-area">
       <h2>Naruči odmah:</h2>
-      <form onSubmit={sendEmail} ref={form}>
+      <form onSubmit={sendEmail} ref={form} netlify>
         <input type="text" name="name" placeholder="Ime i prezime:" />
         <input type="text" name="subject" placeholder="Naslov:" />
         <textarea

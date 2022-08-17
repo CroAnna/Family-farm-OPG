@@ -15,7 +15,7 @@ const Footer = () => {
         </p>
       </a>
 
-      <a href="https://www.instagram.com/">
+      <a href="https://www.instagram.com/opgskarica/">
         <p>
           <FontAwesomeIcon icon={faInstagram} />
           <span>&nbsp;&nbsp;@opgskarica</span>

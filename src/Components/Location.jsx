@@ -9,7 +9,7 @@ import "aos/dist/aos.css";
 
 const Location = () => {
   useEffect(() => {
-    Aos.init({ duration: 2000, delay: 500 });
+    Aos.init({ duration: 2000, delay: 30 });
   }, []);
   const position = [45.5105190562796, 15.693413086588];
   Leaflet.Icon.Default.imagePath =
@@ -30,7 +30,7 @@ const Location = () => {
           <span className="icon">
             <FontAwesomeIcon icon={faPhone}></FontAwesomeIcon>&nbsp;&nbsp;
           </span>
-          <h3> 091 123 1234</h3>
+          <h3> 091 502 6669</h3>
         </div>
       </div>
 
