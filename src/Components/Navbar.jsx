@@ -42,6 +42,9 @@ const Navbar = ({ openNav, setOpenNav }) => {
                 Kontakt
               </a>
             </li>
+            <li>
+              <a href="#">Galerija</a>
+            </li>
           </ul>
         </nav>
       </div>

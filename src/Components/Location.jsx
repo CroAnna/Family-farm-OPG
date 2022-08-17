@@ -39,6 +39,7 @@ const Location = () => {
           center={position}
           zoom={15}
           style={{ height: "100%", minHeight: "100%" }}
+          scrollWheelZoom={false}
         >
           <TileLayer
             className="slika"
