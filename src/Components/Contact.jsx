@@ -5,7 +5,7 @@ import "aos/dist/aos.css";
 
 const Contact = () => {
   useEffect(() => {
-    Aos.init({ duration: 2000, delay: 500 });
+    Aos.init({ duration: 1500, delay: 200 });
   }, []);
   const form = useRef();
   const sendEmail = (e) => {
