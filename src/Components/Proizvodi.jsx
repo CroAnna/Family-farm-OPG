@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import eggs from "../Images/Jaja.jpg";
-import butternut from "../Images/butternut1.jpg";
-import hokkaido from "../Images/hokkaido1.jpg";
+import eggs from "../Images/small/Jaja.jpg";
+import butternut from "../Images/small/butternut1.jpg";
+import hokkaido from "../Images/small/hokkaido1.jpg";
 
 import Proizvod from "./Proizvod";
 
