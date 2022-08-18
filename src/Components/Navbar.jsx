@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faX, faBars } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const Navbar = ({ openNav, setOpenNav }) => {
   const navHandler = () => {
@@ -42,9 +43,13 @@ const Navbar = ({ openNav, setOpenNav }) => {
                 Kontakt
               </a>
             </li>
-            <li>
-              <a href="#">Galerija</a>
-            </li>
+            <Link to="/galerija">
+              <li>
+                <a href="#" onClick={closeHandler}>
+                  Galerija
+                </a>
+              </li>
+            </Link>
           </ul>
         </nav>
       </div>

@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Montserrat&family=Quicksand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
 
+@import "react-alice-carousel/lib/scss/alice-carousel.scss";
+
 // dodaj ono animacija teksta da se mijenja na naslovnoj bez stetnih dodataka, korisne pri zdravlju il tak nekaj
 // ILI da se prebacuju slike na naslovnoj stranici
 // dodaj druge slike - povrce
@@ -89,21 +91,22 @@ body {
       }
     }
   }
-  & .cover {
-    position: relative;
-    text-align: center;
-    & img {
-      width: 100%;
-    }
-    & h2 {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: var(--cream);
-      font-size: 4vw;
-      width: 80%;
-    }
+}
+
+.cover {
+  position: relative;
+  text-align: center;
+  & img {
+    width: 100%;
+  }
+  & h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--cream);
+    font-size: 4vw;
+    width: 80%;
   }
 }
 
@@ -286,6 +289,30 @@ a {
   }
 }
 
+.galerija-container {
+  width: 80%;
+  margin: 20px auto;
+
+  & .grupa {
+    background-color: var(--orange);
+    border-radius: 15px;
+    padding: 30px;
+    & h2 {
+      text-align: center;
+      font-size: 2.5rem;
+    }
+    & .slike {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  & img {
+    height: 500px;
+    padding: 8px;
+    border-radius: 30px;
+  }
+}
+
 // DESKTOP
 @media screen and (min-width: 961px) {
   .header {
@@ -311,6 +338,7 @@ a {
     display: flex;
     padding: 15px;
     border-radius: 30px;
+    margin: 80px auto 0;
   }
   .detaljnije {
     border-radius: 15px;
