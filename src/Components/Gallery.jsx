@@ -18,7 +18,6 @@ import lavanda8 from "../Images/lavanda8.jpg";
 import lavanda9 from "../Images/lavanda9.jpg";
 import lavanda10 from "../Images/lavanda10.jpg";
 import butternut1 from "../Images/butternut1.jpg";
-import { useState } from "react";
 
 const Gallery = () => {
   // render() {
@@ -31,15 +30,15 @@ const Gallery = () => {
     variableWidth: true,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
-    responsive: [
-      {
-        // mobile
-        breakpoint: 961,
-        settings: {
-          variableWidth: false,
-        },
-      },
-    ],
+    // responsive: [
+    //   {
+    //     // mobile
+    //     breakpoint: 961,
+    //     settings: {
+    //       variableWidth: false,
+    //     },
+    //   },
+    // ],
   };
 
   function SampleNextArrow(props) {
@@ -59,7 +58,7 @@ const Gallery = () => {
     );
   }
 
-  const [lavanda, setLavanda] = useState([
+  const lavanda = [
     { slika: lavanda1 },
     { slika: lavanda2 },
     { slika: lavanda3 },
@@ -70,7 +69,7 @@ const Gallery = () => {
     { slika: lavanda8 },
     { slika: lavanda9 },
     { slika: lavanda10 },
-  ]);
+  ];
   return (
     <div className="galerija-container">
       <div className="grupa">
