@@ -89,10 +89,21 @@ export default class Gallery extends Component {
       <div className="galerija-container">
         <div className="grupa">
           <h2>Lavanda</h2>
-          <Slider {...settings} style={{ display: "flex" }}>
+          <Slider
+            {...settings}
+            style={{
+              display: "flex",
+            }}
+          >
             {lavanda.map((item, index) => (
               <div key={index} className="slike">
-                <img src={item.slika} alt="" />
+                <img
+                  src={item.slika}
+                  alt=""
+                  style={{
+                    display: "flex",
+                  }}
+                />
               </div>
             ))}
           </Slider>
@@ -102,7 +113,7 @@ export default class Gallery extends Component {
           <h2>Jaja</h2>
           <Slider {...settings} style={{ display: "flex" }}>
             {jaja.map((item, index) => (
-              <div key={index} className="slike">
+              <div key={index}>
                 <img src={item.slika} alt="" />
               </div>
             ))}

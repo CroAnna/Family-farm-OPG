@@ -5,6 +5,7 @@
 // ILI da se prebacuju slike na naslovnoj stranici
 // lavanda ko akcija
 // onaj toast kad uspjesno posaljes mail
+// loader na galeriju onak dok se ono ne rendera lijepo
 
 :root {
   --darkgreen: #94b49f;
@@ -40,9 +41,7 @@ body {
   & h1 {
     font-family: "Shadows Into Light Two", cursive;
     font-size: 8vw;
-    padding: 8px;
-    margin-top: 5px;
-    // font-family: "Gloria Hallelujah", cursive;
+    padding: 10px;
     text-align: center;
   }
   & h3 {
@@ -303,7 +302,6 @@ a {
     padding: 10px;
     height: 450px;
     margin: 40px 0;
-
     & h2 {
       text-align: center;
       font-size: 2.5rem;
@@ -334,7 +332,6 @@ a {
   .header {
     & h1 {
       font-size: 2.5vw;
-      padding: 10px;
     }
 
     & .cover {
@@ -414,6 +411,7 @@ a {
     & .grupa {
       padding: 15px;
       height: 525px;
+
       & img {
         padding: 15px;
         max-height: 400px;
