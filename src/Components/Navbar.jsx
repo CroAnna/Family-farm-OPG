@@ -44,10 +44,8 @@ const Navbar = ({ openNav, setOpenNav }) => {
               </a>
             </li>
             <Link to="/galerija">
-              <li>
-                <a href="#" onClick={closeHandler}>
-                  Galerija
-                </a>
+              <li className="gal" onClick={closeHandler}>
+                Galerija
               </li>
             </Link>
           </ul>

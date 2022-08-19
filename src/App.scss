@@ -75,14 +75,19 @@ body {
     margin-bottom: 20px;
     & li {
       list-style: none;
-
       text-align: center;
       font-size: x-large;
+      &.gal {
+        padding: 20px;
+        width: 100%;
+        display: block;
+      }
       & a {
         padding: 20px;
         width: 100%;
         display: block;
       }
+
       &:hover {
         background-color: var(--darkgreen);
         transition: 0.5s;
@@ -247,7 +252,7 @@ a {
       margin: 20px auto;
       padding: 24px;
       border: 2px solid var(--darkgreen);
-      border-radius: 4px;
+      border-radius: 8px;
       min-width: 80%;
       font-size: 1.5rem;
     }
@@ -257,7 +262,7 @@ a {
       margin: 20px auto;
       padding: 10px 10px 10px 20px;
       border: 2px solid var(--darkgreen);
-      border-radius: 4px;
+      border-radius: 8px;
       min-width: 80%;
       font-size: 1.5rem;
       resize: none;
@@ -288,35 +293,43 @@ a {
 }
 
 .galerija-container {
-  width: 80%;
+  width: 95%;
   margin: 20px auto;
-
   & .grupa {
     background-color: var(--orange);
     border-radius: 15px;
-    padding: 30px;
+    padding: 10px;
+    height: 500px;
+
     & h2 {
       text-align: center;
       font-size: 2.5rem;
     }
-    & .slike {
-      display: flex;
-      flex-wrap: wrap;
+
+    & img {
+      max-height: 400px;
+      // width: 100%;
+      max-width: 100%;
+      padding: 8px;
+      border-radius: 30px;
+      margin: 0 auto;
     }
   }
-  & img {
-    height: 500px;
-    padding: 8px;
-    border-radius: 30px;
+
+  & .arrow {
+    font-size: 50px;
+    padding: 5px;
+    cursor: pointer;
+    color: var(--lightgrey);
+    height: 410px;
+    display: flex;
+    align-items: center;
   }
 }
 
 // DESKTOP
 @media screen and (min-width: 961px) {
   .header {
-    & h1 {
-      // font-family: "Raleway", sans-serif;
-    }
     & .cover {
       margin-bottom: 80px;
     }
@@ -389,4 +402,33 @@ a {
   .detaljnije {
     width: 25%;
   }
+  // .galerija-container {
+  //   width: 80%;
+  //   margin: 20px auto;
+
+  //   & .grupa {
+  //     background-color: var(--orange);
+  //     border-radius: 15px;
+  //     padding: 30px;
+  //     height: 800px;
+  //     & h2 {
+  //       text-align: center;
+  //       font-size: 2.5rem;
+  //     }
+  //   }
+  //   // & img {
+  //   //   // height: 100px;
+  //   //   padding: 8px;
+  //   //   border-radius: 20px;
+  //   // }
+  //   & .arrow {
+  //     font-size: 30px;
+  //     padding: 20px;
+  //     cursor: pointer;
+  //     color: var(--lightgrey);
+  //     height: 410px;
+  //     display: flex;
+  //     align-items: center;
+  //   }
+  // }
 }

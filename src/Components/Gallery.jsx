@@ -1,5 +1,12 @@
 import React from "react";
 
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
+
 import lavanda1 from "../Images/lavanda1.jpg";
 import lavanda2 from "../Images/lavanda2.jpg";
 import lavanda3 from "../Images/lavanda3.jpg";
@@ -11,21 +18,74 @@ import lavanda8 from "../Images/lavanda8.jpg";
 import lavanda9 from "../Images/lavanda9.jpg";
 import lavanda10 from "../Images/lavanda10.jpg";
 import butternut1 from "../Images/butternut1.jpg";
+import { useState } from "react";
 
 const Gallery = () => {
+  // render() {
+  const settings = {
+    // desktop
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    variableWidth: true,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
+    responsive: [
+      {
+        // mobile
+        breakpoint: 961,
+        settings: {
+          variableWidth: false,
+        },
+      },
+    ],
+  };
+
+  function SampleNextArrow(props) {
+    const { onClick } = props;
+    return (
+      <div className="arrow" onClick={onClick}>
+        <FontAwesomeIcon icon={faAngleRight} />
+      </div>
+    );
+  }
+  function SamplePrevArrow(props) {
+    const { onClick } = props;
+    return (
+      <div className="arrow" onClick={onClick}>
+        <FontAwesomeIcon icon={faAngleLeft} />
+      </div>
+    );
+  }
+
+  const [lavanda, setLavanda] = useState([
+    { slika: lavanda1 },
+    { slika: lavanda2 },
+    { slika: lavanda3 },
+    { slika: lavanda4 },
+    { slika: lavanda5 },
+    { slika: lavanda6 },
+    { slika: lavanda7 },
+    { slika: lavanda8 },
+    { slika: lavanda9 },
+    { slika: lavanda10 },
+  ]);
   return (
     <div className="galerija-container">
       <div className="grupa">
         <h2>Lavanda</h2>
-        <div className="slike">
-          <img src={lavanda1} alt="" />
-          <img src={lavanda2} alt="" /> <img src={lavanda3} alt="" />
-          <img src={lavanda4} alt="" />
-          <img src={lavanda5} alt="" /> <img src={lavanda6} alt="" />
-        </div>
+        <Slider {...settings} style={{ display: "flex" }}>
+          {lavanda.map((item, index) => (
+            <div key={index}>
+              <img src={item.slika} alt="" />
+            </div>
+          ))}
+        </Slider>
       </div>
     </div>
   );
 };
 
+// }
 export default Gallery;
