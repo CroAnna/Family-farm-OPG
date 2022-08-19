@@ -14,7 +14,8 @@
   --lightgreen: #cee5d0;
   --cream: #fcf8e8;
   --orange: #ecb390;
-  --orangestrong: #e9894e;
+  --darkorange: #e9894e;
+  --lightorange: #ffd5bbb2;
   --grey: #383838;
 }
 
@@ -284,7 +285,7 @@ a {
       margin: 20px auto;
       box-shadow: 2px 3px 4px;
       &:hover {
-        background-color: var(--orangestrong);
+        background-color: var(--darkorange);
         transform: scale(1.1);
         transition: 0.3s ease-in;
       }
@@ -296,7 +297,7 @@ a {
   width: 95%;
   margin: 20px auto;
   & .grupa {
-    background-color: var(--orange);
+    background-color: var(--lightorange);
     border-radius: 15px;
     padding: 10px;
     height: 500px;
@@ -402,33 +403,17 @@ a {
   .detaljnije {
     width: 25%;
   }
-  // .galerija-container {
-  //   width: 80%;
-  //   margin: 20px auto;
-
-  //   & .grupa {
-  //     background-color: var(--orange);
-  //     border-radius: 15px;
-  //     padding: 30px;
-  //     height: 800px;
-  //     & h2 {
-  //       text-align: center;
-  //       font-size: 2.5rem;
-  //     }
-  //   }
-  //   // & img {
-  //   //   // height: 100px;
-  //   //   padding: 8px;
-  //   //   border-radius: 20px;
-  //   // }
-  //   & .arrow {
-  //     font-size: 30px;
-  //     padding: 20px;
-  //     cursor: pointer;
-  //     color: var(--lightgrey);
-  //     height: 410px;
-  //     display: flex;
-  //     align-items: center;
-  //   }
-  // }
+  .galerija-container {
+    width: 70%;
+    & .grupa {
+      padding: 15px;
+      & img {
+        padding: 15px;
+      }
+    }
+    & .arrow {
+      font-size: 40px;
+      cursor: pointer;
+    }
+  }
 }
