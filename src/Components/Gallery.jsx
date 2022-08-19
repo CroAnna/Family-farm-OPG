@@ -7,18 +7,6 @@ import "slick-carousel/slick/slick-theme.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
-import lavanda1 from "../Images/lavanda1.jpg";
-import lavanda2 from "../Images/lavanda2.jpg";
-import lavanda3 from "../Images/lavanda3.jpg";
-import lavanda4 from "../Images/lavanda4.jpg";
-import lavanda5 from "../Images/lavanda5.jpg";
-import lavanda6 from "../Images/lavanda6.jpg";
-import lavanda7 from "../Images/lavanda7.jpg";
-import lavanda8 from "../Images/lavanda8.jpg";
-import lavanda9 from "../Images/lavanda9.jpg";
-import lavanda10 from "../Images/lavanda10.jpg";
-import butternut1 from "../Images/butternut1.jpg";
-
 export default class Gallery extends Component {
   // has to be this type (not as arrow function) - responsive rendering error
   render() {
@@ -65,24 +53,78 @@ export default class Gallery extends Component {
     }
 
     const lavanda = [
-      { slika: lavanda1 },
-      { slika: lavanda2 },
-      { slika: lavanda3 },
-      { slika: lavanda4 },
-      { slika: lavanda5 },
-      { slika: lavanda6 },
-      { slika: lavanda7 },
-      { slika: lavanda8 },
-      { slika: lavanda9 },
-      { slika: lavanda10 },
+      { slika: require("../Images/lavanda1.jpg") },
+      { slika: require("../Images/lavanda2.jpg") },
+      { slika: require("../Images/lavanda3.jpg") },
+      { slika: require("../Images/lavanda4.jpg") },
+      { slika: require("../Images/lavanda7.jpg") },
+      { slika: require("../Images/lavanda5.jpg") },
+      { slika: require("../Images/lavanda6.jpg") },
+      { slika: require("../Images/lavanda9.jpg") },
+      { slika: require("../Images/lavanda10.jpg") },
+      { slika: require("../Images/lavanda8.jpg") },
     ];
+    const jaja = [
+      { slika: require("../Images/jaja3.jpg") },
+      { slika: require("../Images/jaja2.jpg") },
+      { slika: require("../Images/jaja7.jpg") },
+      { slika: require("../Images/Jaja.jpg") },
+      { slika: require("../Images/jaja4.jpg") },
+      { slika: require("../Images/jaja5.jpg") },
+      { slika: require("../Images/jaja6.jpg") },
+    ];
+    const hokkaido = [
+      { slika: require("../Images/hokkaido2.jpg") },
+      { slika: require("../Images/tikve.jpg") },
+      { slika: require("../Images/hokkaido3.jpg") },
+      { slika: require("../Images/hokkaido1.jpg") },
+    ];
+    const butternut = [
+      { slika: require("../Images/butternut2.jpg") },
+      { slika: require("../Images/butternut3.jpg") },
+      { slika: require("../Images/butternut1.jpg") },
+    ];
+
     return (
       <div className="galerija-container">
         <div className="grupa">
           <h2>Lavanda</h2>
           <Slider {...settings} style={{ display: "flex" }}>
             {lavanda.map((item, index) => (
-              <div key={index}>
+              <div key={index} className="slike">
+                <img src={item.slika} alt="" />
+              </div>
+            ))}
+          </Slider>
+        </div>
+
+        <div className="grupa">
+          <h2>Jaja</h2>
+          <Slider {...settings} style={{ display: "flex" }}>
+            {jaja.map((item, index) => (
+              <div key={index} className="slike">
+                <img src={item.slika} alt="" />
+              </div>
+            ))}
+          </Slider>
+        </div>
+
+        <div className="grupa">
+          <h2>Hokkaido tikve</h2>
+          <Slider {...settings} style={{ display: "flex" }}>
+            {hokkaido.map((item, index) => (
+              <div key={index} className="slike">
+                <img src={item.slika} alt="" />
+              </div>
+            ))}
+          </Slider>
+        </div>
+
+        <div className="grupa">
+          <h2>Butternut tikve</h2>
+          <Slider {...settings} style={{ display: "flex" }}>
+            {butternut.map((item, index) => (
+              <div key={index} className="slike">
                 <img src={item.slika} alt="" />
               </div>
             ))}
