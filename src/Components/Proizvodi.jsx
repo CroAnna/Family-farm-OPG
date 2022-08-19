@@ -16,23 +16,23 @@ const Proizvodi = () => {
     },
     {
       name: "Butternut tikve",
-      price: "4 kn/kg",
+      price: "12 kn/kg",
       about:
         "Butternut tikva, bogata je vitaminima, mineralima i vlaknima. Njeno narančasto meso, slatkastog okusa podsjeća na lješnjak te je iz tog razloga savršen odabir za pripremu krem juha, pirea, pita te ostalih slatkih jela. Poznata je kao namirnica koja pomaže u skidanju kilograma zbog svoje niskokaloričnosti te ima protuupalno djelovanje.",
       image: butternut,
     },
     {
       name: "Hokkaido tikve",
-      price: "18 kn/kg",
+      price: "16 kn/kg",
       about:
         "Ova se sorta smatra pravim blagom za ljubitelje bundeva, osim velike količine vitamina, aminokiselina i makronutrijenata, pogodna je i za dijetsku hranu te se odlično slaže s ostalim povrćem i mesom. Osim toga, bundeva ne gubi na vrijednosti ni nakon zamrzavanja što znači da možete dugo uživati u povrću.",
       image: hokkaido,
     },
     {
       name: "Jaja",
-      price: "20 kn/10 kom",
+      price: "15 kn/10 kom",
       about:
-        "Svakodnevno svježa jaja, ubrana našim rukama tijekom cijelog dana. Naše kokoši slobodno šetaju u prirodnome okruženju, hrane se zrnjem iz lokalnog uzgoja, svježe pokošenom travom te ostalim kukcima na koje naiđu tijekom dana, spavaju zaštićene pod krovom, a od ranog jutra uživaju u slobodi i upijaju zrake sunca.",
+        "Svakodnevno svježa jaja, pobrana našim rukama tijekom cijelog dana. Naše kokoši slobodno šetaju u prirodnome okruženju, hrane se zrnjem iz lokalnog uzgoja, svježe pokošenom travom te ostalim kukcima na koje naiđu tijekom dana, spavaju zaštićene pod krovom, a od ranog jutra uživaju u slobodi i upijaju zrake sunca.",
       image: eggs,
     },
   ]);
