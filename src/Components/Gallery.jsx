@@ -53,10 +53,11 @@ export default class Gallery extends Component {
     }
 
     const lavanda = [
+      { slika: require("../Images/lavanda4.jpg") },
+
       { slika: require("../Images/lavanda1.jpg") },
       { slika: require("../Images/lavanda2.jpg") },
       { slika: require("../Images/lavanda3.jpg") },
-      { slika: require("../Images/lavanda4.jpg") },
       { slika: require("../Images/lavanda7.jpg") },
       { slika: require("../Images/lavanda5.jpg") },
       { slika: require("../Images/lavanda6.jpg") },
@@ -97,13 +98,7 @@ export default class Gallery extends Component {
           >
             {lavanda.map((item, index) => (
               <div key={index} className="slike">
-                <img
-                  src={item.slika}
-                  alt=""
-                  style={{
-                    display: "flex",
-                  }}
-                />
+                <img src={item.slika} alt="" />
               </div>
             ))}
           </Slider>
@@ -135,23 +130,24 @@ export default class Gallery extends Component {
           <h2>Butternut tikve</h2>
           <Slider {...settings} style={{ display: "flex" }}>
             {butternut.map((item, index) => (
-              <div key={index} className="slike">
+              <div key={index}>
+                <span className="help"></span>
                 <img src={item.slika} alt="" />
               </div>
             ))}
           </Slider>
         </div>
-        <div className="video-responsive">
+        {/* <div className="video-responsive">
           <iframe
             width="560"
             height="315"
             src="https://www.youtube.com/embed/p2tFLclN_sA"
             title="YouTube video player"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
+            allowFullScreen
           ></iframe>
-        </div>
+        </div> */}
       </div>
     );
   }

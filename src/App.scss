@@ -300,7 +300,7 @@ a {
     background-color: var(--lightorange);
     border-radius: 15px;
     padding: 10px;
-    height: 450px;
+    height: 350px;
     margin: 40px 0;
     & h2 {
       text-align: center;
@@ -308,10 +308,10 @@ a {
     }
 
     & img {
-      max-height: 350px;
+      max-height: 220px;
       max-width: 100%;
       padding: 5px;
-      border-radius: 30px;
+      border-radius: 20px;
       margin: 0 auto;
     }
   }
@@ -321,7 +321,7 @@ a {
     padding: 5px;
     cursor: pointer;
     color: var(--lightgrey);
-    height: 350px;
+    height: 220px;
     display: flex;
     align-items: center;
   }
