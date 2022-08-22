@@ -4,6 +4,8 @@ import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faInstagram, faFacebook } from "@fortawesome/free-brands-svg-icons";
+
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -28,9 +30,31 @@ const Location = () => {
         </div>
         <div className="info-phone">
           <span className="icon">
+            <FontAwesomeIcon icon={faInstagram} />
+            &nbsp;
+          </span>
+          <a href="https://www.instagram.com/opgskarica/">
+            <p>
+              <span>&nbsp;@opgskarica</span>
+            </p>
+          </a>
+        </div>
+        <div className="info-phone">
+          <span className="icon">
+            <FontAwesomeIcon icon={faFacebook} />
+            &nbsp;
+          </span>
+          <a href="https://www.facebook.com/opgskarica//">
+            <p>
+              <span>&nbsp;OPG Škarica</span>
+            </p>
+          </a>
+        </div>
+        <div className="info-phone">
+          <span className="icon">
             <FontAwesomeIcon icon={faPhone}></FontAwesomeIcon>&nbsp;&nbsp;
           </span>
-          <h3> 091 502 6669</h3>
+          <h3>091 502 6669</h3>
         </div>
       </div>
 

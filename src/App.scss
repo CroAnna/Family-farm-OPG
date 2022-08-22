@@ -269,6 +269,9 @@ a {
 
     & .info-phone {
       color: var(--orange);
+      & p {
+        color: var(--cream);
+      }
     }
   }
 
