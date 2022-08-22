@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import eggs from "../Images/small/Jaja.jpg";
 import butternut from "../Images/small/butternut1.jpg";
 import hokkaido from "../Images/small/hokkaido1.jpg";
+import batat from "../Images/small/batat1.jpg";
 
 import Proizvod from "./Proizvod";
 
@@ -12,7 +13,7 @@ const Proizvodi = () => {
       price: "12 kn/kg",
       about:
         "Tzv. slatki krumpir, narančaste boje, koji je iznimno bogat vitaminima, mineralima i antioksidansima te je poznat svojim brojnim doprinosima u zdravlju crijeva, očiju, moždanim funkcijama i imunitetu. U usporedbi s običnim krumpirom ima manje ugljikohidrata i kalorija. Najzdraviji je bez da se guli, a priprema mu je raznolika: kao pire, umak, juha, kuhan, pečen, pržen - primjena mu je raznolika, kao i njegove zdravstvene prednosti. ",
-      image: hokkaido,
+      image: batat,
     },
     {
       name: "Butternut tikve",

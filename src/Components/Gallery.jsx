@@ -85,7 +85,10 @@ export default class Gallery extends Component {
       { slika: require("../Images/butternut3.jpg") },
       { slika: require("../Images/butternut1.jpg") },
     ];
-
+    const batat = [
+      { slika: require("../Images/batat1.jpg") },
+      { slika: require("../Images/batat2.jpg") },
+    ];
     return (
       <div className="galerija-container">
         <div className="grupa">
@@ -130,6 +133,17 @@ export default class Gallery extends Component {
           <h2>Butternut tikve</h2>
           <Slider {...settings} style={{ display: "flex" }}>
             {butternut.map((item, index) => (
+              <div key={index}>
+                <span className="help"></span>
+                <img src={item.slika} alt="" />
+              </div>
+            ))}
+          </Slider>
+        </div>
+        <div className="grupa">
+          <h2>Batat</h2>
+          <Slider {...settings} style={{ display: "flex" }}>
+            {batat.map((item, index) => (
               <div key={index}>
                 <span className="help"></span>
                 <img src={item.slika} alt="" />
