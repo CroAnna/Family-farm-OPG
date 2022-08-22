@@ -44,7 +44,7 @@ const Location = () => {
             <FontAwesomeIcon icon={faFacebook} />
             &nbsp;
           </span>
-          <a href="https://www.facebook.com/opgskarica//">
+          <a href="https://www.facebook.com/opgskarica/">
             <p>
               <span>&nbsp;OPG Škarica</span>
             </p>

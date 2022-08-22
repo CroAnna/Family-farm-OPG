@@ -16,7 +16,7 @@ const Footer = () => {
         </p>
       </a>
 
-      <a href="https://www.facebook.com/opgskarica//">
+      <a href="https://www.facebook.com/opgskarica/">
         <p>
           <FontAwesomeIcon icon={faFacebook} />
           <span>&nbsp;&nbsp;OPG Škarica</span>
