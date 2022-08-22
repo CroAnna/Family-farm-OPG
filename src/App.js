@@ -6,7 +6,6 @@ import Header from "./Components/Header";
 import Location from "./Components/Location";
 import Proizvodi from "./Components/Proizvodi";
 import Coverphoto from "./Components/Coverphoto";
-
 import Gallery from "./Components/Gallery";
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";

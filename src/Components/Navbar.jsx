@@ -1,52 +1,23 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faX, faBars } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
-const Navbar = ({ openNav, setOpenNav }) => {
-  const navHandler = () => {
-    setOpenNav(!openNav);
-  };
-  const closeHandler = () => {
-    setOpenNav(false);
-  };
+const Navbar = () => {
   return (
-    <div className="nav-bar">
+    <div>
       <div>
-        <FontAwesomeIcon
-          icon={faBars}
-          onClick={navHandler}
-          className={openNav ? "hidden" : "iconBar fixed"}
-        />
-        <FontAwesomeIcon
-          icon={faX}
-          onClick={navHandler}
-          className={openNav ? "iconBar abs" : "hidden"}
-        />
-      </div>
-      <div>
-        <nav className={openNav ? "nav-bar" : "hidden"}>
+        <nav>
           <ul>
-            {" "}
             <li>
-              <a href="./#proizvodi" onClick={closeHandler}>
-                Proizvodi
-              </a>
+              <a href="./#proizvodi">Proizvodi</a>
             </li>
             <li>
-              <a href="./#lokacija" onClick={closeHandler}>
-                Lokacija
-              </a>
+              <a href="./#lokacija">Lokacija</a>
             </li>
             <li>
-              <a href="./#kontakt" onClick={closeHandler}>
-                Kontakt
-              </a>
+              <a href="./#kontakt">Kontakt</a>
             </li>
             <Link to="/galerija">
-              <li className="gal" onClick={closeHandler}>
-                Galerija
-              </li>
+              <li className="gal">Galerija</li>
             </Link>
           </ul>
         </nav>
