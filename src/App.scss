@@ -148,6 +148,22 @@ body {
   margin: 0 auto;
 }
 
+.btn-gallery {
+  text-align: center;
+  margin: 25px;
+  & button {
+    background-color: var(--lightgreen);
+    font-size: 6vw;
+    padding: 20px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    &:hover {
+      background-color: var(--darkgreen);
+      transition: 0.5s;
+    }
+  }
+}
+
 .detaljnije {
   margin: 15px;
   color: var(--grey);
@@ -155,7 +171,6 @@ body {
   padding: 20px;
   background-color: var(--lightgreen);
   & .detaljnije-image {
-    // min-height: 240px; // dodaj sve slike iste velicine i makni ovo
     width: 100%;
     border-radius: 10px;
   }
@@ -331,7 +346,6 @@ a {
   overflow: hidden;
   padding-bottom: 56.25%;
   position: relative;
-  // width: 70%;
   height: 0;
   & iframe {
     left: 0;
@@ -371,8 +385,17 @@ a {
     border-radius: 30px;
     margin: 80px auto 0;
   }
+
+  .btn-gallery {
+    & button {
+      font-size: 2vw;
+    }
+  }
   .detaljnije {
     border-radius: 15px;
+    & p {
+      font-size: 1vw;
+    }
   }
   .location-container {
     & .info {

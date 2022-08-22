@@ -6,8 +6,11 @@ import batat from "../Images/small/batat1.jpg";
 
 import Proizvod from "./Proizvod";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowCircleRight } from "@fortawesome/free-solid-svg-icons";
+
 const Proizvodi = () => {
-  const [proizvodi, setProizvode] = useState([
+  const proizvodi = [
     {
       name: "Batat",
       price: "12 kn/kg",
@@ -36,7 +39,7 @@ const Proizvodi = () => {
         "Svakodnevno svježa jaja, pobrana našim rukama tijekom cijelog dana. Naše kokoši slobodno šetaju u prirodnome okruženju, hrane se zrnjem iz lokalnog uzgoja, svježe pokošenom travom te ostalim kukcima na koje naiđu tijekom dana, spavaju zaštićene pod krovom, a od ranog jutra uživaju u slobodi i upijaju zrake sunca.",
       image: eggs,
     },
-  ]);
+  ];
 
   return (
     <div>
@@ -50,6 +53,13 @@ const Proizvodi = () => {
             key={proizvod.name}
           />
         ))}
+      </div>
+      <div className="btn-gallery">
+        <a href="../galerija">
+          <button>
+            Više fotografija <FontAwesomeIcon icon={faArrowCircleRight} />
+          </button>
+        </a>
       </div>
     </div>
   );
