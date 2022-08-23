@@ -11,10 +11,10 @@ const Navbar = () => {
               <a href="./#proizvodi">Proizvodi</a>
             </li>
             <li>
-              <a href="./#lokacija">Lokacija</a>
+              <a href="./#onama">O nama</a>
             </li>
             <li>
-              <a href="./#kontakt">Kontakt</a>
+              <a href="./#naruci">Naruči odmah</a>
             </li>
             <Link to="/galerija">
               <li className="gal">Galerija</li>

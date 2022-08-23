@@ -304,7 +304,7 @@ a {
       padding: 10px;
       border: 2px solid var(--darkgreen);
       border-radius: 8px;
-      min-width: 80%;
+      width: 80%;
       font-size: 1.5rem;
     }
 
@@ -314,7 +314,7 @@ a {
       padding: 10px;
       border: 2px solid var(--darkgreen);
       border-radius: 8px;
-      min-width: 80%;
+      width: 80%;
       font-size: 1.5rem;
       resize: none;
     }
@@ -471,10 +471,16 @@ a {
     }
   }
 
-  #kontakt {
+  .kontakt {
     & form {
       width: 800px;
       margin: 20px auto;
+      & input {
+        width: 90%;
+      }
+      & textarea {
+        width: 90%;
+      }
     }
   }
 

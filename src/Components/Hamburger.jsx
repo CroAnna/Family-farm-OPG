@@ -34,8 +34,8 @@ const Hamburger = ({ openNav, setOpenNav }) => {
               </a>
             </li>
             <li>
-              <a href="./#lokacija" onClick={closeHandler}>
-                Lokacija
+              <a href="./#onama" onClick={closeHandler}>
+                O nama
               </a>
             </li>
             <li>
