@@ -28,11 +28,11 @@ const Contact = () => {
     form.current.reset();
   };
   return (
-    <div id="kontakt" data-aos="fade-down" data-aos-anchor=".t-area">
+    <div className="kontakt" data-aos="fade-down" data-aos-anchor=".t-area">
       <h2>Naruči odmah:</h2>
       <form onSubmit={sendEmail} ref={form} netlify="true">
         <input type="text" name="name" placeholder="Ime i prezime:" />
-        <input type="text" name="subject" placeholder="Naslov:" />
+        <input type="text" name="subject" placeholder="Naslov:" id="naruci" />
         <textarea
           className="t-area"
           type="text"

@@ -39,8 +39,8 @@ const Hamburger = ({ openNav, setOpenNav }) => {
               </a>
             </li>
             <li>
-              <a href="./#kontakt" onClick={closeHandler}>
-                Kontakt
+              <a href="./#naruci" onClick={closeHandler}>
+                Naruči odmah
               </a>
             </li>
             <Link to="/galerija">

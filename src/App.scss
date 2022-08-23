@@ -215,10 +215,11 @@ body {
 
 .footer {
   background-color: var(--grey);
-  font-size: 20px;
+  // font-size: 20px;
+  font-size: 6vw;
   padding: 20px 20px 30px 20px;
   & p {
-    padding: 10px;
+    padding: 8px 10px;
     color: var(--cream);
   }
   & span {
@@ -252,7 +253,7 @@ a {
     }
 
     & p {
-      padding-left: 50px;
+      // padding-left: 50px;
     }
 
     & .info-address {
@@ -264,10 +265,12 @@ a {
       }
       & .icon {
         margin-top: 13px;
+        font-size: 2.5em;
       }
     }
 
     & .info-phone {
+      padding: 5px;
       color: var(--orange);
       & p {
         color: var(--cream);
@@ -286,8 +289,7 @@ a {
     }
   }
 }
-
-#kontakt {
+.kontakt {
   margin: 50px auto;
 
   & h2 {
@@ -299,7 +301,7 @@ a {
     & input {
       display: block;
       margin: 20px auto;
-      padding: 24px;
+      padding: 10px;
       border: 2px solid var(--darkgreen);
       border-radius: 8px;
       min-width: 80%;
@@ -309,7 +311,7 @@ a {
     & textarea {
       display: block;
       margin: 20px auto;
-      padding: 10px 10px 10px 20px;
+      padding: 10px;
       border: 2px solid var(--darkgreen);
       border-radius: 8px;
       min-width: 80%;
@@ -438,7 +440,7 @@ a {
       padding-top: 50px;
 
       & .icon {
-        float: left;
+        // float: left;
       }
 
       & h3 {
@@ -449,7 +451,7 @@ a {
         display: flex;
         padding: 10px;
         & h3 {
-          font-size: 2vw;
+          font-size: 2.2vw;
         }
         & p {
           width: auto;
@@ -458,6 +460,7 @@ a {
           font-size: 1.5vw;
         }
         & .icon {
+          font-size: 1em;
           margin-top: 0px;
         }
       }
@@ -495,6 +498,13 @@ a {
       height: 410px;
       font-size: 40px;
       cursor: pointer;
+    }
+  }
+
+  .footer {
+    font-size: 20px;
+    & p {
+      padding: 10px;
     }
   }
 }
