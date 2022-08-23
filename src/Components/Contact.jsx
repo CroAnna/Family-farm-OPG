@@ -11,28 +11,12 @@ const Contact = () => {
   }, []);
 
   const form = useRef();
-  const success = () => {
+  const success_ = () => {
     // toast("Uspješno poslano!");
-    toast.success("Uspješno poslano", {
-      position: "top-center",
-      autoClose: 5000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-    });
+    toast.success("Uspješno poslano", {});
   };
-  const error = () => {
-    toast.error("Došlo je do pogreške, pokušajte ponovo!", {
-      position: "top-left",
-      autoClose: 5000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-    });
+  const error_ = () => {
+    toast.error("Došlo je do pogreške, pokušajte ponovo!", {});
   };
 
   const sendEmail = (e) => {
@@ -47,11 +31,11 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
-          success();
+          success_();
         },
         (error) => {
           console.log(error.text);
-          error();
+          error_();
         }
       );
     form.current.reset();
@@ -61,20 +45,25 @@ const Contact = () => {
     <div className="kontakt" data-aos="fade-down" data-aos-anchor=".t-area">
       <h2>Naruči odmah:</h2>
       <form onSubmit={sendEmail} ref={form} netlify="true">
-        <input type="text" name="name" placeholder="Ime i prezime:" required />
+        <input
+          type="text"
+          name="name"
+          placeholder="Ime i prezime: *"
+          required
+        />
         <span id="naruci"></span>
-        <input type="text" name="subject" placeholder="Naslov:" required />
+        <input type="text" name="subject" placeholder="Naslov: *" required />
         <textarea
           className="t-area"
           type="text"
           name="message"
-          placeholder="Poruka:"
+          placeholder="Poruka: *"
           cols="10"
           rows="7"
           required
         ></textarea>
-        <input type="text" name="address" placeholder="Adresa:" required />
-        <input type="email" name="email" placeholder="Vaš e-mail:" required />
+        <input type="text" name="address" placeholder="Adresa: *" required />
+        <input type="email" name="email" placeholder="Vaš e-mail: *" required />
         <button type="submit">Pošalji</button>
       </form>
       <ToastContainer
@@ -85,9 +74,7 @@ const Contact = () => {
         newestOnTop={false}
         closeOnClick
         rtl={false}
-        pauseOnFocusLoss
         draggable
-        pauseOnHover
       />
     </div>
   );
