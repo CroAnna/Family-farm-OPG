@@ -221,6 +221,9 @@ body {
   & p {
     padding: 8px 10px;
     color: var(--cream);
+    & a {
+      color: var(--cream);
+    }
   }
   & span {
     color: var(--orange);

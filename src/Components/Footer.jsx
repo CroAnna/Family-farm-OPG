@@ -7,7 +7,9 @@ import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 const Footer = () => {
   return (
     <div className="footer">
-      <p>Imate pitanja?</p>
+      <p>
+        <a href="#naruci">Imate pitanja?</a>
+      </p>
 
       <a href="https://www.instagram.com/opgskarica/">
         <p>

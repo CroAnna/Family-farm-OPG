@@ -45,13 +45,14 @@ const Contact = () => {
     <div className="kontakt" data-aos="fade-down" data-aos-anchor=".t-area">
       <h2>Naruči odmah:</h2>
       <form onSubmit={sendEmail} ref={form} netlify="true">
+        <span id="naruci"></span>
         <input
           type="text"
           name="name"
           placeholder="Ime i prezime: *"
           required
         />
-        <span id="naruci"></span>
+
         <input type="text" name="subject" placeholder="Naslov: *" required />
         <textarea
           className="t-area"
