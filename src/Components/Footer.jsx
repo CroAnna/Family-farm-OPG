@@ -31,6 +31,13 @@ const Footer = () => {
           <span>&nbsp;&nbsp;opgskarica@gmail.com</span>
         </p>
       </a>
+      <a
+        href="https://www.flaticon.com/free-icons/vegetables"
+        title="vegetables icons"
+        className="hidden"
+      >
+        Vegetables icons created by Freepik - Flaticon
+      </a>
     </div>
   );
 };
