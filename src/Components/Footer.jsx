@@ -10,27 +10,24 @@ const Footer = () => {
       <p>
         <a href="#naruci">Imate pitanja?</a>
       </p>
-
-      <a href="https://www.instagram.com/opgskarica/">
-        <p>
+      <p>
+        <a href="https://www.instagram.com/opgskarica/">
           <FontAwesomeIcon icon={faInstagram} />
           <span>&nbsp;&nbsp;@opgskarica</span>
-        </p>
-      </a>
-
-      <a href="https://www.facebook.com/opgskarica/">
-        <p>
+        </a>
+      </p>
+      <p>
+        <a href="https://www.facebook.com/opgskarica/">
           <FontAwesomeIcon icon={faFacebook} />
           <span>&nbsp;&nbsp;OPG Škarica</span>
-        </p>
-      </a>
-
-      <a href="mailto:opgskarica@gmail.com">
-        <p>
+        </a>
+      </p>
+      <p>
+        <a href="mailto:opgskarica@gmail.com">
           <FontAwesomeIcon icon={faEnvelope} />
-          <span>&nbsp;&nbsp;opgskarica@gmail.com</span>
-        </p>
-      </a>
+          <span>&nbsp;&nbsp;opgskarica@gmail.com</span>{" "}
+        </a>
+      </p>
       <a
         href="https://www.flaticon.com/free-icons/vegetables"
         title="vegetables icons"

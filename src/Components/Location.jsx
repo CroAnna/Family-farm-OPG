@@ -33,22 +33,22 @@ const Location = () => {
             <FontAwesomeIcon icon={faInstagram} />
             &nbsp;
           </span>
-          <a href="https://www.instagram.com/opgskarica/">
-            <p>
+          <p>
+            <a href="https://www.instagram.com/opgskarica/">
               <span>&nbsp;@opgskarica</span>
-            </p>
-          </a>
+            </a>
+          </p>
         </div>
         <div className="info-phone">
           <span className="icon">
             <FontAwesomeIcon icon={faFacebook} />
             &nbsp;
           </span>
-          <a href="https://www.facebook.com/opgskarica/">
-            <p>
+          <p>
+            <a href="https://www.facebook.com/opgskarica/">
               <span>&nbsp;OPG Škarica</span>
-            </p>
-          </a>
+            </a>
+          </p>
         </div>
         <div className="info-phone">
           <span className="icon">

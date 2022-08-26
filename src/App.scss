@@ -235,6 +235,7 @@ a {
   color: var(--grey);
 }
 .location-container {
+  overflow-x: hidden;
   background-color: var(--grey);
   color: var(--cream);
   margin: 0 auto;
@@ -255,10 +256,6 @@ a {
       font-size: 5vw;
     }
 
-    & p {
-      // padding-left: 50px;
-    }
-
     & .info-address {
       padding-bottom: 10px;
 
@@ -275,7 +272,7 @@ a {
     & .info-phone {
       padding: 5px;
       color: var(--orange);
-      & p {
+      & a {
         color: var(--cream);
       }
     }
@@ -441,10 +438,6 @@ a {
       width: 80%;
       margin: 40px auto;
       padding-top: 50px;
-
-      & .icon {
-        // float: left;
-      }
 
       & h3 {
         font-size: 2vw;
