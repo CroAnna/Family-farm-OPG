@@ -10,9 +10,9 @@ const Proizvod = ({ name, price, about, image }) => {
     <div className="detaljnije" data-aos="fade-up">
       <h2>{name}</h2>
       <img src={image} alt={image} className="detaljnije-image" />
-      <p>
+      {/* <p>
         Cijena: <b>{price}</b>
-      </p>
+      </p> */}
       <p>O proizvodu: {about}</p>
     </div>
   );
