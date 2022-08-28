@@ -48,6 +48,11 @@ const Hamburger = ({ openNav, setOpenNav }) => {
                 Galerija
               </li>
             </Link>
+            <Link to="/recepti">
+              <li className="gal" onClick={closeHandler}>
+                Recepti
+              </li>
+            </Link>
           </ul>
         </nav>
       </div>
