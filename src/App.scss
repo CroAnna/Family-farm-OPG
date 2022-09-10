@@ -502,6 +502,9 @@ a {
   }
   .proizvodi-container {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 15px;
     border-radius: 30px;
     margin: 80px auto 0;
@@ -515,7 +518,7 @@ a {
   .detaljnije {
     border-radius: 15px;
     & p {
-      font-size: 1vw;
+      font-size: 1.1vw;
     }
   }
   .location-container {
@@ -568,6 +571,7 @@ a {
 
   .detaljnije {
     width: 25%;
+    font-size: 24px;
   }
   .galerija-container {
     width: 70%;
