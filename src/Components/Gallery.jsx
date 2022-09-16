@@ -76,9 +76,14 @@ export default class Gallery extends Component {
     ];
     const hokkaido = [
       { slika: require("../Images/hokkaido2.jpg") },
+      { slika: require("../Images/kosara2.jpg") },
+
       { slika: require("../Images/tikve.jpg") },
+      { slika: require("../Images/kosara3.jpg") },
       { slika: require("../Images/hokkaido3.jpg") },
       { slika: require("../Images/hokkaido1.jpg") },
+
+      { slika: require("../Images/kosara1.jpg") },
     ];
     const butternut = [
       { slika: require("../Images/butternut2.jpg") },
@@ -91,6 +96,27 @@ export default class Gallery extends Component {
     ];
     return (
       <div className="galerija-container">
+        <div className="grupa">
+          <h2>Hokkaido tikve</h2>
+          <Slider {...settings} style={{ display: "flex" }}>
+            {hokkaido.map((item, index) => (
+              <div key={index} className="slike">
+                <img src={item.slika} alt="" />
+              </div>
+            ))}
+          </Slider>
+        </div>
+        <div className="grupa">
+          <h2>Butternut tikve</h2>
+          <Slider {...settings} style={{ display: "flex" }}>
+            {butternut.map((item, index) => (
+              <div key={index}>
+                <span className="help"></span>
+                <img src={item.slika} alt="" />
+              </div>
+            ))}
+          </Slider>
+        </div>
         <div className="grupa">
           <h2>Lavanda</h2>
           <Slider
@@ -106,35 +132,11 @@ export default class Gallery extends Component {
             ))}
           </Slider>
         </div>
-
         <div className="grupa">
           <h2>Jaja</h2>
           <Slider {...settings} style={{ display: "flex" }}>
             {jaja.map((item, index) => (
               <div key={index}>
-                <img src={item.slika} alt="" />
-              </div>
-            ))}
-          </Slider>
-        </div>
-
-        <div className="grupa">
-          <h2>Hokkaido tikve</h2>
-          <Slider {...settings} style={{ display: "flex" }}>
-            {hokkaido.map((item, index) => (
-              <div key={index} className="slike">
-                <img src={item.slika} alt="" />
-              </div>
-            ))}
-          </Slider>
-        </div>
-
-        <div className="grupa">
-          <h2>Butternut tikve</h2>
-          <Slider {...settings} style={{ display: "flex" }}>
-            {butternut.map((item, index) => (
-              <div key={index}>
-                <span className="help"></span>
                 <img src={item.slika} alt="" />
               </div>
             ))}
@@ -156,6 +158,17 @@ export default class Gallery extends Component {
             width="560"
             height="315"
             src="https://www.youtube.com/embed/p2tFLclN_sA"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </div>{" "}
+        <div className="video-responsive">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/HX95jVbjlb8"
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

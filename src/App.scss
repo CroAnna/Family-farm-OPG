@@ -382,6 +382,7 @@ a {
   padding-bottom: 56.25%;
   position: relative;
   height: 0;
+  margin-top: 20px;
   & iframe {
     left: 0;
     top: 0;
@@ -390,6 +391,11 @@ a {
     position: absolute;
     border-radius: 15px;
   }
+}
+
+.dodatno {
+  width: 50%;
+  margin: 0 auto 50px;
 }
 
 .recipes {

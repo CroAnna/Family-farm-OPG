@@ -9,8 +9,10 @@ import Coverphoto from "./Components/Coverphoto";
 import Gallery from "./Components/Gallery";
 import Recipes from "./Components/Recipes";
 import RecipeInfo from "./Components/RecipeInfo";
+import ScrollToTop from "./Components/ScrollToTop";
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Dodatno from "./Components/Dodatno";
 
 function App() {
   const [openNav, setOpenNav] = useState(false);
@@ -38,6 +40,8 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
+        {" "}
+        <ScrollToTop />
         <Header openNav={openNav} setOpenNav={setOpenNav} />
         <Routes>
           <Route
@@ -47,6 +51,7 @@ function App() {
               <Fragment>
                 <Coverphoto />
                 <Proizvodi />
+                <Dodatno />
                 <Location />
                 <Contact />
               </Fragment>

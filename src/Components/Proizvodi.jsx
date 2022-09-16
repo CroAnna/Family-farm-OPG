@@ -27,6 +27,13 @@ const Proizvodi = () => {
       image: lavander,
     },
     {
+      name: "Butternut tikve",
+      price: "- nije još dostupno -",
+      about:
+        "Butternut tikva, bogata je vitaminima, mineralima i vlaknima. Njeno narančasto meso, slatkastog okusa podsjeća na lješnjak te je iz tog razloga savršen odabir za pripremu krem juha, pirea, pita te ostalih slatkih jela. Poznata je kao namirnica koja pomaže u skidanju kilograma zbog svoje niskokaloričnosti te ima protuupalno djelovanje.",
+      image: butternut,
+    },
+    {
       name: "Jaja",
       price: "15 kn/10 kom",
       about:
@@ -39,13 +46,6 @@ const Proizvodi = () => {
       about:
         "Tzv. slatki krumpir, narančaste boje, koji je iznimno bogat vitaminima, mineralima i antioksidansima te je poznat svojim brojnim doprinosima u zdravlju crijeva, očiju, moždanim funkcijama i imunitetu. U usporedbi s običnim krumpirom ima manje ugljikohidrata i kalorija. Najzdraviji je bez da se guli, a priprema mu je raznolika: kao pire, umak, juha, kuhan, pečen, pržen - primjena mu je raznolika, kao i njegove zdravstvene prednosti. ",
       image: batat,
-    },
-    {
-      name: "Butternut tikve",
-      price: "- nije još dostupno -",
-      about:
-        "Butternut tikva, bogata je vitaminima, mineralima i vlaknima. Njeno narančasto meso, slatkastog okusa podsjeća na lješnjak te je iz tog razloga savršen odabir za pripremu krem juha, pirea, pita te ostalih slatkih jela. Poznata je kao namirnica koja pomaže u skidanju kilograma zbog svoje niskokaloričnosti te ima protuupalno djelovanje.",
-      image: butternut,
     },
   ];
 

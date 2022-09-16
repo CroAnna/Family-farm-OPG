@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 
 const Proizvod = ({ name, price, about, image }) => {
   useEffect(() => {
@@ -9,7 +10,9 @@ const Proizvod = ({ name, price, about, image }) => {
   return (
     <div className="detaljnije" data-aos="fade-up">
       <h2>{name}</h2>
-      <img src={image} alt={image} className="detaljnije-image" />
+      <Link to="/galerija">
+        <img src={image} alt={image} className="detaljnije-image" />
+      </Link>
       <p>
         Cijena: <b>{price}</b>
       </p>
