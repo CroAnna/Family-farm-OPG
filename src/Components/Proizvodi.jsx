@@ -42,7 +42,7 @@ const Proizvodi = () => {
     },
     {
       name: "Batat",
-      price: "- nije još dostupno -",
+      price: "10 kn/kg",
       about:
         "Tzv. slatki krumpir, narančaste boje, koji je iznimno bogat vitaminima, mineralima i antioksidansima te je poznat svojim brojnim doprinosima u zdravlju crijeva, očiju, moždanim funkcijama i imunitetu. U usporedbi s običnim krumpirom ima manje ugljikohidrata i kalorija. Najzdraviji je bez da se guli, a priprema mu je raznolika: kao pire, umak, juha, kuhan, pečen, pržen - primjena mu je raznolika, kao i njegove zdravstvene prednosti. ",
       image: batat,
