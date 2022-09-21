@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import eggs from "../Images/small/Jaja.jpg";
-import butternut from "../Images/small/butternut1.jpg";
+import butternut from "../Images/butternut7.jpg";
 import hokkaido from "../Images/small/hokkaido1.jpg";
 import batat from "../Images/small/batat1.jpg";
 import lavander from "../Images/small/lavanda-img.jpg";
@@ -20,14 +20,14 @@ const Proizvodi = () => {
       image: hokkaido,
     },
     {
-      name: "Lavanda 🆕",
+      name: "Lavanda",
       price: "5 kn/kom",
       about:
         "Njen ugodan miris i ljubičasti cvijet koristi se u mnoge svrhe. Lavanda je poznata ljetovita biljka koja je važna i u kozmetičkoj industriji, djelotvorna je kao lijek kod prehlada dok njen osušeni cvijet opušta i smiruje ljude te omogućuje bolji san. Izuzetna korist lavande je i da odbija insekte poput komaraca, moljaca i muha. Iz tog razloga se vrećice lavande često postavljaju po kući i u ormare.",
       image: lavander,
     },
     {
-      name: "Butternut tikve",
+      name: "Butternut tikve 🆕",
       price: "10 kn/kg",
       about:
         "Butternut tikva, bogata je vitaminima, mineralima i vlaknima. Njeno narančasto meso, slatkastog okusa podsjeća na lješnjak te je iz tog razloga savršen odabir za pripremu krem juha, pirea, pita te ostalih slatkih jela. Poznata je kao namirnica koja pomaže u skidanju kilograma zbog svoje niskokaloričnosti te ima protuupalno djelovanje.",

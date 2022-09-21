@@ -86,8 +86,16 @@ export default class Gallery extends Component {
       { slika: require("../Images/kosara1.jpg") },
     ];
     const butternut = [
+      { slika: require("../Images/butternut7.jpg") },
+      { slika: require("../Images/butternut8.jpg") },
+      { slika: require("../Images/butternut4.jpg") },
+      { slika: require("../Images/butternut9.jpg") },
+      { slika: require("../Images/butternut6.jpg") },
+      { slika: require("../Images/butternut10.jpg") },
+      { slika: require("../Images/butternut5.jpg") },
       { slika: require("../Images/butternut2.jpg") },
       { slika: require("../Images/butternut3.jpg") },
+      { slika: require("../Images/butternut11.jpg") },
       { slika: require("../Images/butternut1.jpg") },
     ];
     const batat = [
