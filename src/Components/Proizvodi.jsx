@@ -35,14 +35,14 @@ const Proizvodi = () => {
     },
     {
       name: "Jaja",
-      price: "15 kn/10 kom",
+      price: "20 kn/10 kom",
       about:
         "Svakodnevno svježa jaja, pobrana našim rukama tijekom cijelog dana. Naše kokoši slobodno šetaju u prirodnome okruženju, hrane se zrnjem iz lokalnog uzgoja, svježe pokošenom travom te ostalim kukcima na koje naiđu tijekom dana, spavaju zaštićene pod krovom, a od ranog jutra uživaju u slobodi i upijaju zrake sunca.",
       image: eggs,
     },
     {
       name: "Batat",
-      price: "- nije još dostupno -",
+      price: "15 kn/kg",
       about:
         "Tzv. slatki krumpir, narančaste boje, koji je iznimno bogat vitaminima, mineralima i antioksidansima te je poznat svojim brojnim doprinosima u zdravlju crijeva, očiju, moždanim funkcijama i imunitetu. U usporedbi s običnim krumpirom ima manje ugljikohidrata i kalorija. Najzdraviji je bez da se guli, a priprema mu je raznolika: kao pire, umak, juha, kuhan, pečen, pržen - primjena mu je raznolika, kao i njegove zdravstvene prednosti. ",
       image: batat,
