@@ -11,6 +11,8 @@ Desktop and mobile version - responsive design. Navigation bar design depends on
 
 You can see the final page on link: [www.opgskarica.com](https://www.opgskarica.com/)
 
+Starting protoype: https://www.figma.com/file/NiWH62261T56Yn1uM7HU1m/OPG-stranica?node-id=0%3A1&t=JY81w1R2xmFZOx4R-1 
+
 To run:
 
 `npm install`
