@@ -1,9 +1,9 @@
 Webpage for family farm.
 
-It shows items for sale with information about it, has input form for ordering items connected with email (using EmailJS), automatically sends an email to owners email (API) and shows a toast message if submitting was successful. 
+It shows items for sale with information about it, has input form for ordering items connected with email (using EmailJS), automatically sends an email to owners email (API) and shows a toast message if submitting was successful (React Toastify). 
 
-Includes location map, animations and image sliders. 
-
+Includes location map (React Leaflet), animations (Animate On Scroll) and image sliders. 
+ 
 Contains of 2 types of routes: index page and gallery. 
 
 Desktop and mobile version - responsive design. Navigation bar design depends on screen width - mobile version has hamburger menu and desktop standard horizontal menu.
