@@ -1,22 +1,17 @@
-import { Fragment, useState } from "react";
+import { Fragment } from "react";
 import "./App.scss";
 import Contact from "./Components/Contact";
-import Footer from "./Components/Footer";
-import Header from "./Components/Header";
 import Location from "./Components/Location";
 import Proizvodi from "./Components/Proizvodi";
 import Coverphoto from "./Components/Coverphoto";
 import Gallery from "./Components/Gallery";
 import Recipes from "./Components/Recipes";
 import RecipeInfo from "./Components/RecipeInfo";
-import ScrollToTop from "./Components/ScrollToTop";
-
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Dodatno from "./Components/Dodatno";
 import Layout from "./Layout";
 
 function App() {
-  const [openNav, setOpenNav] = useState(false);
   const recepti = [
     {
       name: "Juha od butternut tikvi",

@@ -98,19 +98,24 @@ body {
     }
 
     display: block;
-    @media screen and (min-width: 920px) {
+    @media screen and (min-width: 1200px) {
       display: none;
     }
   }
   & .desktop {
     display: none;
-    @media screen and (min-width: 920px) {
+    @media screen and (min-width: 1200px) {
+      & .navbar-container {
+        display: flex;
+        background-color: var(--lightgreen);
+        justify-content: space-around;
+      }
       display: block;
       & ul {
-        background-color: var(--lightgreen);
-        margin-bottom: 5px;
+        margin-top: 5px;
         display: flex;
-        justify-content: center;
+
+        //background-color: red;
         & li {
           list-style: none;
           text-align: center;
@@ -498,7 +503,8 @@ a {
 @media screen and (min-width: 961px) {
   .header {
     & h1 {
-      font-size: 2.5vw;
+      font-size: 40px;
+      margin: 8px;
     }
 
     & .cover {
