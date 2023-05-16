@@ -1,31 +1,31 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Hamburger from "./Hamburger";
 import Navbar from "./Navbar";
+import { useNavigate } from "react-router-dom";
 
-const Navigation = ({ openNav, setOpenNav }) => {
-  const [isDesktop, setDesktop] = useState(window.innerWidth > 768);
+const Navigation = () => {
+  const navigate = useNavigate();
+  const [isOpen, setOpen] = useState(false);
 
-  const updateMedia = () => {
-    setDesktop(window.innerWidth > 650);
+  const navHandler = () => {
+    setOpen(!isOpen);
+    console.log(isOpen);
   };
 
-  useEffect(() => {
-    window.addEventListener("resize", updateMedia);
-    return () => window.removeEventListener("resize", updateMedia);
-  });
+  const closeHandler = () => {
+    setOpen(false);
+  };
 
   return (
-    <div>
-      {isDesktop ? (
-        <div className="desktop">
-          <Navbar />
-        </div>
-      ) : (
-        <div className="mobile">
-          <Hamburger openNav={openNav} setOpenNav={setOpenNav} />
-        </div>
-      )}
-    </div>
+    <>
+      <div className="desktop">
+        <Navbar />
+      </div>
+
+      <div className="mobile" onClick={navHandler}>
+        <Hamburger openNav={isOpen} setOpenNav={setOpen} />
+      </div>
+    </>
   );
 };
 

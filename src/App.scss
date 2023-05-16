@@ -96,31 +96,40 @@ body {
         }
       }
     }
+
+    display: block;
+    @media screen and (min-width: 920px) {
+      display: none;
+    }
   }
   & .desktop {
-    & ul {
-      background-color: var(--lightgreen);
-      margin-bottom: 5px;
-      display: flex;
-      justify-content: center;
-      & li {
-        list-style: none;
-        text-align: center;
-        font-size: x-large;
-        padding: 20px;
-        &.gal {
-          padding: 20px 40px;
-          width: 100%;
-          display: block;
-        }
-        & a {
+    display: none;
+    @media screen and (min-width: 920px) {
+      display: block;
+      & ul {
+        background-color: var(--lightgreen);
+        margin-bottom: 5px;
+        display: flex;
+        justify-content: center;
+        & li {
+          list-style: none;
+          text-align: center;
+          font-size: x-large;
           padding: 20px;
-          width: 100%;
-        }
+          &.gal {
+            padding: 20px 40px;
+            width: 100%;
+            display: block;
+          }
+          & a {
+            padding: 20px;
+            width: 100%;
+          }
 
-        &:hover {
-          background-color: var(--darkgreen);
-          transition: 0.5s;
+          &:hover {
+            background-color: var(--darkgreen);
+            transition: 0.5s;
+          }
         }
       }
     }

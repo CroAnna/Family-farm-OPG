@@ -2,12 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Navigation from "./Navigation";
 
-// mozda dodaj tu image slider onaj
-
-const Header = ({ openNav, setOpenNav }) => {
+const Header = () => {
   return (
     <div className="header">
-      <Navigation openNav={openNav} setOpenNav={setOpenNav} />
+      <Navigation />
       <Link to="/">
         <h1>OPG Škarica</h1>
         <h3>Zdravo je, domaće je</h3>

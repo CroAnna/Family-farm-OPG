@@ -13,6 +13,7 @@ import ScrollToTop from "./Components/ScrollToTop";
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Dodatno from "./Components/Dodatno";
+import Layout from "./Layout";
 
 function App() {
   const [openNav, setOpenNav] = useState(false);
@@ -38,38 +39,28 @@ function App() {
   ];
 
   return (
-    <BrowserRouter>
-      <div className="App">
-        {" "}
-        <ScrollToTop />
-        <Header openNav={openNav} setOpenNav={setOpenNav} />
-        <Routes>
-          <Route
-            index
-            path="/"
-            element={
-              <Fragment>
-                <Coverphoto />
-                <Proizvodi />
-                <Dodatno />
-                <Location />
-                <Contact />
-              </Fragment>
-            }
-          ></Route>
-          <Route path="/galerija" element={<Gallery />}></Route>
-          <Route
-            path="/recepti"
-            element={<Recipes recepti={recepti} />}
-          ></Route>
-          <Route
-            path="/recept/:name"
-            element={<RecipeInfo recepti={recepti} />}
-          ></Route>
-        </Routes>
-        <Footer />
-      </div>
-    </BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route
+          index
+          element={
+            <Fragment>
+              <Coverphoto />
+              <Proizvodi />
+              <Dodatno />
+              <Location />
+              <Contact />
+            </Fragment>
+          }
+        ></Route>
+        <Route path="/galerija" element={<Gallery />}></Route>
+        <Route path="/recepti" element={<Recipes recepti={recepti} />}></Route>
+        <Route
+          path="/recept/:name"
+          element={<RecipeInfo recepti={recepti} />}
+        ></Route>
+      </Route>
+    </Routes>
   );
 }
 
