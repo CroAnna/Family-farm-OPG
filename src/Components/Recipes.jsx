@@ -1,12 +1,13 @@
 import React from "react";
 import Recipe from "./Recipe";
+import { receptiList } from "../Data/recepti";
 
-const Recipes = ({ recepti }) => {
+const Recipes = () => {
   return (
     <div className="recipes">
       <h2 className="title">Recepti</h2>
       <div className="recipes-container">
-        {recepti.map((recept, index) => (
+        {receptiList.map((recept, index) => (
           <Recipe name={recept.name} image={recept.image} key={recept.name} />
         ))}
       </div>

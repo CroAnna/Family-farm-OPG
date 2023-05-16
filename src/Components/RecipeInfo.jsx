@@ -1,13 +1,14 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+import { receptiList } from "../Data/recepti";
 
-const RecipeInfo = ({ recepti }) => {
+const RecipeInfo = () => {
   let { name } = useParams();
 
   return (
     <div className="recipe-info">
       <div>
-        {recepti
+        {receptiList
           .filter((recept) => recept.name === name)
           .map((recept, index) => (
             <div key={index} className="info">
