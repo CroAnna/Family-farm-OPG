@@ -1,9 +1,8 @@
-import React, { useState } from "react";
-import Proizvod from "./Proizvod";
+import React from "react";
+import Proizvod from "./FavProduct";
 import { proizvodiList } from "../Data/proizvodi";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowCircleRight } from "@fortawesome/free-solid-svg-icons";
-import { proizvodi } from "../Data/proizvodi";
 
 const Proizvodi = () => {
   return (

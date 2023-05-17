@@ -393,7 +393,7 @@ a {
     border-radius: 15px;
     padding: 10px;
     height: 350px;
-    margin: 40px 0;
+    margin: 20px 0;
     & h2 {
       text-align: center;
       font-size: 2.5rem;
@@ -499,21 +499,14 @@ a {
       margin: 10px;
       font-size: 6vw;
       text-align: center;
-      background-color: var(--lightorange);
     }
     & .info-content {
-      background-color: white;
-      margin: 20px 0;
-      padding: 20px;
+      margin: 0px 0;
+      padding: 5px;
 
-      & h3 {
-        font-size: 6vw;
-        color: var(--darkorange);
-      }
-      & h4 {
+      & p {
         font-size: 4vw;
-        padding: 15px;
-        text-align: justify;
+        text-align: center;
       }
     }
     & .info-photo {
@@ -635,7 +628,7 @@ a {
     width: 70%;
     & .grupa {
       padding: 15px;
-      height: 525px;
+      height: 480px;
 
       & img {
         padding: 15px;
@@ -687,7 +680,7 @@ a {
     & .info {
       & h2 {
         padding: 20px;
-        font-size: 3.5vw;
+        font-size: 40px;
         border-radius: 15px;
       }
       & .info-photo {
@@ -699,14 +692,12 @@ a {
         border-radius: 10px;
       }
       & .info-content {
-        width: 80%;
-        margin: 30px auto;
-        padding: 40px;
-        & h3 {
-          font-size: 2.5vw;
-        }
-        & h4 {
-          font-size: 1.4vw;
+        margin: 0px auto;
+        padding: 10px;
+        width: fit-content;
+        & p {
+          font-size: 24px;
+          width: 500px;
         }
       }
     }

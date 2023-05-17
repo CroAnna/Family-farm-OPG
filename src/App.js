@@ -2,13 +2,13 @@ import { Fragment } from "react";
 import "./App.scss";
 import Contact from "./Components/Contact";
 import Location from "./Components/Location";
-import Proizvodi from "./Components/Proizvodi";
+import Proizvodi from "./Components/FavProducts";
 import Coverphoto from "./Components/Coverphoto";
-import Gallery from "./Components/Gallery";
-import Recipes from "./Components/Recipes";
-import RecipeInfo from "./Components/RecipeInfo";
+import Gallery from "./Components/ImageSlider";
+import Recipes from "./Components/AllProducts";
+import RecipeInfo from "./Components/ProductInfo";
 import { Route, Routes } from "react-router-dom";
-import Dodatno from "./Components/Dodatno";
+import Dodatno from "./Components/Video";
 import Layout from "./Layout";
 
 function App() {
@@ -29,7 +29,7 @@ function App() {
         ></Route>
         <Route path="/galerija" element={<Gallery />}></Route>
         <Route path="/proizvodi" element={<Recipes />}></Route>
-        <Route path="/proizvodi/:name" element={<RecipeInfo />}></Route>
+        <Route path="/proizvodi/:id" element={<RecipeInfo />}></Route>
       </Route>
     </Routes>
   );

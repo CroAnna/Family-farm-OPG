@@ -14,13 +14,13 @@ const Navbar = () => {
               <a href="/">Početna</a>
             </li>
             <li>
-              <a href="./proizvodi">Proizvodi</a>
+              <a href="/proizvodi">Proizvodi</a>
             </li>
             <li>
-              <a href="./#onama">O nama</a>
+              <a href="/#onama">O nama</a>
             </li>
             <li>
-              <a href="./#naruci">Naruči odmah</a>
+              <a href="/#naruci">Naruči odmah</a>
             </li>
 
             <Link to="/proizvodi">

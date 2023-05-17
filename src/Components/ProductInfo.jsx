@@ -1,31 +1,26 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { receptiList } from "../Data/recepti";
 import { proizvodiList } from "../Data/proizvodi";
+import Gallery from "./ImageSlider";
 
 const RecipeInfo = () => {
-  let { name } = useParams();
+  let { id } = useParams();
 
   return (
     <div className="recipe-info">
       <div>
         {proizvodiList
-          .filter((recept) => recept.name === name)
+          .filter((recept) => recept.id === id)
           .map((recept, index) => (
             <div key={index} className="info">
-              <h2>{name}</h2>
-              <div className="info-photo">
-                <img src={recept.image} alt={name} />
-              </div>
+              <h2>{recept.name}</h2>
               <div className="info-content">
-                <h3>Sastojci:</h3>
-                <h4>{recept.ingredients}</h4>
-                <h3>Upute za pripremu:</h3>
-                <h4>{recept.description}</h4>
+                <p>{recept.about}</p>
               </div>
             </div>
           ))}
       </div>
+      <Gallery itemName={id} />
     </div>
   );
 };

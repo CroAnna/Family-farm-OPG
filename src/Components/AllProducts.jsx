@@ -8,7 +8,12 @@ const Recipes = () => {
       <h2 className="title">Istražite sve naše proizvode:</h2>
       <div className="recipes-container">
         {proizvodiList.map((recept, index) => (
-          <Recipe name={recept.name} image={recept.image} key={recept.name} />
+          <Recipe
+            name={recept.name}
+            image={recept.image}
+            key={recept.name}
+            id={recept.id}
+          />
         ))}
       </div>
     </div>
