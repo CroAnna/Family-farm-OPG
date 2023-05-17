@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Recipe = ({ name, image }) => {
   return (
     <div className="recipe">
-      <Link to={"/recept/" + name}>
+      <Link to={"/proizvodi/" + name}>
         <div className="image-container ">
           <span className="darken">
             <img src={image} alt="" />

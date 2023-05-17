@@ -143,18 +143,38 @@ body {
 
 .cover {
   position: relative;
-  text-align: center;
   & img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
-  & h2 {
+  & .cover-img {
+    width: 100%;
+    height: 100%;
+  }
+  & .cover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  & .cover-text {
+    //background-color: greenyellow;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: var(--cream);
-    font-size: 4vw;
-    width: 80%;
+    & h2 {
+      color: #fff;
+      font-size: 6vw;
+      //width: 80%;
+    }
+    & h4 {
+      color: var(--cream);
+      font-size: 3vw;
+    }
   }
 }
 
@@ -185,11 +205,19 @@ body {
     text-shadow: 21x 1px 2px var(--grey);
   }
 }
-
-.proizvodi-container {
-  background-color: var(--darkgreen);
-  width: 90%;
-  margin: 0 auto;
+.proizvodi-outer-container {
+  & h3 {
+    text-align: center;
+    margin: 40px auto;
+    font-size: 40px;
+    color: var(--grey);
+  }
+  & .proizvodi-container {
+    background-color: var(--darkgreen);
+    max-width: 1440px;
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
 .btn-gallery {
@@ -414,11 +442,10 @@ a {
 
 .recipes {
   & .title {
-    background-color: var(--lightorange);
     border-radius: 15px;
     padding: 10px;
     text-align: center;
-    font-size: 8vw;
+    font-size: 30px;
     margin-bottom: 1rem;
   }
   & .recipes-container {
@@ -506,9 +533,17 @@ a {
       font-size: 40px;
       margin: 8px;
     }
-
-    & .cover {
-      margin-bottom: 80px;
+  }
+  .cover {
+    margin-bottom: 80px;
+    & .cover-text {
+      width: 900px;
+      & h2 {
+        font-size: 96px;
+      }
+      & h4 {
+        font-size: 24px;
+      }
     }
   }
   .images-container {
@@ -524,7 +559,7 @@ a {
   .proizvodi-container {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    //flex-wrap: wrap;
     justify-content: center;
     padding: 15px;
     border-radius: 30px;
@@ -533,7 +568,8 @@ a {
 
   .btn-gallery {
     & button {
-      font-size: 2vw;
+      padding: 25px 70px;
+      font-size: 40px;
     }
   }
   .detaljnije {
@@ -591,7 +627,8 @@ a {
   }
 
   .detaljnije {
-    width: 25%;
+    width: 30%;
+    min-width: 280px;
     font-size: 24px;
   }
   .galerija-container {
@@ -637,7 +674,8 @@ a {
     width: 70%;
     margin: 0 auto;
     & .title {
-      font-size: 4vw;
+      font-size: 40px;
+      margin-top: 20px;
     }
     & .recipes-container {
       flex-direction: row;
@@ -675,5 +713,20 @@ a {
   }
   .dodatno {
     width: 50%;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .cover {
+    margin-bottom: 80px;
+    & .cover-text {
+      width: 1440px;
+      & h2 {
+        font-size: 76px;
+      }
+      & h4 {
+        font-size: 24px;
+      }
+    }
   }
 }

@@ -43,12 +43,7 @@ const Hamburger = ({ openNav, setOpenNav }) => {
                 Naruči odmah
               </a>
             </li>
-            <Link to="/galerija">
-              <li className="gal" onClick={closeHandler}>
-                Galerija
-              </li>
-            </Link>
-            <Link to="/recepti">
+            <Link to="/proizvodi">
               <li className="gal" onClick={closeHandler}>
                 Recepti
               </li>

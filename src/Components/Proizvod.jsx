@@ -10,7 +10,7 @@ const Proizvod = ({ name, price, about, image }) => {
   return (
     <div className="detaljnije" data-aos="fade-up">
       <h2>{name}</h2>
-      <Link to="/galerija">
+      <Link to="/proizvodi">
         <img src={image} alt={image} className="detaljnije-image" />
       </Link>
       <p>

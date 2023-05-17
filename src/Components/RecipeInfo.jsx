@@ -1,6 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { receptiList } from "../Data/recepti";
+import { proizvodiList } from "../Data/proizvodi";
 
 const RecipeInfo = () => {
   let { name } = useParams();
@@ -8,7 +9,7 @@ const RecipeInfo = () => {
   return (
     <div className="recipe-info">
       <div>
-        {receptiList
+        {proizvodiList
           .filter((recept) => recept.name === name)
           .map((recept, index) => (
             <div key={index} className="info">

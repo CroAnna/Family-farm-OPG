@@ -28,8 +28,8 @@ function App() {
           }
         ></Route>
         <Route path="/galerija" element={<Gallery />}></Route>
-        <Route path="/recepti" element={<Recipes />}></Route>
-        <Route path="/recept/:name" element={<RecipeInfo />}></Route>
+        <Route path="/proizvodi" element={<Recipes />}></Route>
+        <Route path="/proizvodi/:name" element={<RecipeInfo />}></Route>
       </Route>
     </Routes>
   );
