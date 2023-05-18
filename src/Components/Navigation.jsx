@@ -8,7 +8,6 @@ const Navigation = () => {
 
   const navHandler = () => {
     setOpen(!isOpen);
-    console.log(isOpen);
   };
 
   return (
@@ -18,7 +17,7 @@ const Navigation = () => {
       </div>
 
       <div className="mobile" onClick={navHandler}>
-        <Hamburger openNav={isOpen} setOpenNav={setOpen} />{" "}
+        <Hamburger isOpen={isOpen} setOpen={setOpen} />
         <Link to="/">
           <h1>OPG Škarica</h1>
           <h3>Zdravo je, domaće je</h3>

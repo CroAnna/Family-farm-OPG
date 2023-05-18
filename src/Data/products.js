@@ -1,10 +1,10 @@
 import eggs from "../Images/small/Jaja.jpg";
 import butternut from "../Images/butternut7.jpg";
-import hokkaido from "../Images/small/hokkaido1.jpg";
 import batat from "../Images/small/batat1.jpg";
 import lavander from "../Images/small/lavanda-img.jpg";
+import hokkaido from "../Images/small/hokkaido1.jpg";
 
-export const proizvodiList = [
+export const productList = [
   {
     name: "Hokkaido tikve",
     price: "2 EUR/kg",

@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Recipe = ({ name, image, id }) => {
+const Product = ({ name, image, id }) => {
   return (
-    <div className="recipe">
+    <div className="product">
       <Link to={"/proizvodi/" + id}>
         <div className="image-container ">
           <span className="darken">
@@ -18,4 +18,4 @@ const Recipe = ({ name, image, id }) => {
   );
 };
 
-export default Recipe;
+export default Product;

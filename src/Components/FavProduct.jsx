@@ -3,7 +3,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
 
-const Proizvod = ({ name, price, about, image }) => {
+const FavProduct = ({ name, price, about, image }) => {
   useEffect(() => {
     Aos.init({ duration: 1500, offset: 0, anchorPlacement: "top" });
   }, []);
@@ -21,4 +21,4 @@ const Proizvod = ({ name, price, about, image }) => {
   );
 };
 
-export default Proizvod;
+export default FavProduct;

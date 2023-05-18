@@ -165,6 +165,7 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
+    width: 90%;
     transform: translate(-50%, -50%);
     & h2 {
       color: #fff;
@@ -457,7 +458,7 @@ a {
     margin-top: 20px;
   }
 }
-.recipe {
+.product {
   margin: 0.5em;
   & .darken {
     filter: brightness(60%);
@@ -488,7 +489,7 @@ a {
   }
 }
 
-.recipe-info {
+.product-info {
   width: 70%;
   width: 90%;
   margin: 0 auto;
@@ -650,7 +651,7 @@ a {
       padding: 10px;
     }
   }
-  .recipe {
+  .product {
     & .image-container {
       width: 400px;
       height: 400px;
@@ -676,7 +677,7 @@ a {
     }
   }
 
-  .recipe-info {
+  .product-info {
     & .info {
       & h2 {
         padding: 20px;

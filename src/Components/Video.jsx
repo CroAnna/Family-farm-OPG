@@ -1,6 +1,6 @@
 import React from "react";
 
-const Dodatno = () => {
+const Video = () => {
   return (
     <div className="dodatno">
       <div className="video-responsive">
@@ -18,4 +18,4 @@ const Dodatno = () => {
   );
 };
 
-export default Dodatno;
+export default Video;

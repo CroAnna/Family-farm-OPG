@@ -1,23 +1,23 @@
 import React from "react";
-import Proizvod from "./FavProduct";
-import { proizvodiList } from "../Data/proizvodi";
+import FavProduct from "./FavProduct";
+import { productList } from "../Data/products";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowCircleRight } from "@fortawesome/free-solid-svg-icons";
 
-const Proizvodi = () => {
+const FavProducts = () => {
   return (
     <div className="proizvodi-outer-container">
       <h3>Najpopularniji proizvodi</h3>
       <div className="proizvodi-container" id="proizvodi">
-        {proizvodiList.map(
-          (proizvod, index) =>
+        {productList.map(
+          (product, index) =>
             index < 3 && (
-              <Proizvod
-                name={proizvod.name}
-                price={proizvod.price}
-                about={proizvod.about}
-                image={proizvod.image}
-                key={proizvod.name}
+              <FavProduct
+                name={product.name}
+                price={product.price}
+                about={product.about}
+                image={product.image}
+                key={product.name}
               />
             )
         )}
@@ -32,4 +32,4 @@ const Proizvodi = () => {
     </div>
   );
 };
-export default Proizvodi;
+export default FavProducts;

@@ -3,12 +3,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faX, faBars } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
-const Hamburger = ({ openNav, setOpenNav }) => {
+const Hamburger = ({ isOpen, setOpen }) => {
   const navHandler = () => {
-    setOpenNav(!openNav);
+    setOpen(!isOpen);
   };
   const closeHandler = () => {
-    setOpenNav(false);
+    setOpen(false);
   };
   return (
     <div className="nav-bar">
@@ -16,36 +16,40 @@ const Hamburger = ({ openNav, setOpenNav }) => {
         <FontAwesomeIcon
           icon={faBars}
           onClick={navHandler}
-          className={openNav ? "hidden" : "iconBar fixed"}
+          className={isOpen ? "hidden" : "iconBar fixed"}
         />
         <FontAwesomeIcon
           icon={faX}
           onClick={navHandler}
-          className={openNav ? "iconBar abs" : "hidden"}
+          className={isOpen ? "iconBar abs" : "hidden"}
         />
       </div>
       <div>
-        <nav className={openNav ? "nav-bar" : "hidden"}>
+        <nav className={isOpen ? "nav-bar" : "hidden"}>
           <ul>
-            {" "}
             <li>
-              <a href="./#proizvodi" onClick={closeHandler}>
+              <Link to="/" onClick={closeHandler}>
+                Početna
+              </Link>
+            </li>
+            <li>
+              <Link to="/proizvodi" onClick={closeHandler}>
                 Proizvodi
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="./#onama" onClick={closeHandler}>
+              <Link to="./#onama" onClick={closeHandler}>
                 O nama
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="./#naruci" onClick={closeHandler}>
+              <Link to="./#naruci" onClick={closeHandler}>
                 Naruči odmah
-              </a>
+              </Link>
             </li>
             <Link to="/proizvodi">
               <li className="gal" onClick={closeHandler}>
-                Recepti
+                Proizvodi
               </li>
             </Link>
           </ul>

@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import { imageGroups } from "../Data/image_groups";
 
-export default class Gallery extends Component {
+export default class ImageSlider extends Component {
   // has to be this type (not as arrow function) - responsive rendering error
   render() {
     const { itemName } = this.props;

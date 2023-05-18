@@ -1,28 +1,28 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { proizvodiList } from "../Data/proizvodi";
-import Gallery from "./ImageSlider";
+import { productList } from "../Data/products";
+import ImageSlider from "./ImageSlider";
 
-const RecipeInfo = () => {
+const ProductInfo = () => {
   let { id } = useParams();
 
   return (
-    <div className="recipe-info">
+    <div className="product-info">
       <div>
-        {proizvodiList
-          .filter((recept) => recept.id === id)
-          .map((recept, index) => (
+        {productList
+          .filter((item) => item.id === id)
+          .map((item, index) => (
             <div key={index} className="info">
-              <h2>{recept.name}</h2>
+              <h2>{item.name}</h2>
               <div className="info-content">
-                <p>{recept.about}</p>
+                <p>{item.about}</p>
               </div>
             </div>
           ))}
       </div>
-      <Gallery itemName={id} />
+      <ImageSlider itemName={id} />
     </div>
   );
 };
 
-export default RecipeInfo;
+export default ProductInfo;

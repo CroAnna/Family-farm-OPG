@@ -9,7 +9,7 @@ import { faInstagram, faFacebook } from "@fortawesome/free-brands-svg-icons";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-const Onama = () => {
+const About = () => {
   useEffect(() => {
     Aos.init({ duration: 1500, anchorPlacement: "top" });
   }, []);
@@ -79,4 +79,4 @@ const Onama = () => {
     </div>
   );
 };
-export default Onama;
+export default About;
