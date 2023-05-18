@@ -1,81 +1,51 @@
-import React, { useEffect } from "react";
-import Leaflet from "leaflet";
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import "leaflet/dist/leaflet.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLocationDot, faPhone } from "@fortawesome/free-solid-svg-icons";
-import { faInstagram, faFacebook } from "@fortawesome/free-brands-svg-icons";
-
-import Aos from "aos";
+import React from "react";
 import "aos/dist/aos.css";
+import Contact from "./Contact";
 
 const About = () => {
-  useEffect(() => {
-    Aos.init({ duration: 1500, anchorPlacement: "top" });
-  }, []);
-  const position = [45.5105190562796, 15.693413086588];
-  Leaflet.Icon.Default.imagePath =
-    "//cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.4/images/"; // marker image
-
   return (
-    <div className="location-container" id="onama">
-      <div className="info" data-aos="fade-right" data-aos-anchor=".info-phone">
-        <div className="info-address">
-          <span className="icon">
-            <FontAwesomeIcon icon={faLocationDot}></FontAwesomeIcon>&nbsp;&nbsp;
-          </span>
-          <h3>Zamršje 35,</h3>
-          <p> 47000 Karlovac,</p>
-          <p>Hrvatska</p>
-        </div>
-        <div className="info-phone">
-          <span className="icon">
-            <FontAwesomeIcon icon={faInstagram} />
-            &nbsp;
-          </span>
-          <a href="https://www.instagram.com/opgskarica/">
-            <p>
-              <span>&nbsp;@opgskarica</span>
-            </p>
-          </a>
-        </div>
-        <div className="info-phone">
-          <span className="icon">
-            <FontAwesomeIcon icon={faFacebook} />
-            &nbsp;
-          </span>
-          <a href="https://www.facebook.com/opgskarica/">
-            <p>
-              <span>&nbsp;OPG Škarica</span>
-            </p>
-          </a>
-        </div>
-        <div className="info-phone">
-          <span className="icon">
-            <FontAwesomeIcon icon={faPhone}></FontAwesomeIcon>&nbsp;&nbsp;
-          </span>
-          <h3>091 502 6669</h3>
-        </div>
+    <div className="about-container" id="onama">
+      <div className="info">
+        <h2 className="title">O našem OPG-u</h2>
+        <p>
+          Mi smo malo obiteljsko poljoprivredno gospodarstvo iz Zamršja,
+          prekrasnog mjesta smještenog nedaleko od Karlovca u Hrvatskoj.
+          Nazivamo se OPG Škarica i naša strast je pružiti svježe i kvalitetne
+          proizvode našim lokalnim i širim zajednicama. Svaki član obitelji
+          doprinosi svojim radom, stručnošću i ljubavlju prema poljoprivredi,
+          stvarajući tako jedinstvenu i povezanu atmosferu koja se osjeti u
+          svakom aspektu našeg poslovanja.
+        </p>
+        <p>
+          Naša raznolika ponuda obuhvaća nekoliko vrsta proizvoda, a jedan od
+          naših dragulja su hokkaido i butternut tikve. Uzgajamo ih s posebnom
+          pažnjom, koristeći prirodne metode uzgoja i bez upotrebe pesticida.
+          Ove tikve imaju prepoznatljive oblike, a njihova sočna i bogata pulpa
+          savršena je za pripremu raznih jela. Od juha i pirea do pečenih
+          delicija, hokkaido i butternut tikve donose prefinjen okus i obogaćuju
+          vaše obroke.
+        </p>
+        <p>
+          Uzgoj na našem OPG-u temelji se na tradiciji i održivosti. Vjerujemo u
+          važnost lokalne i organske proizvodnje, te nastojimo očuvati naše
+          okolišne resurse. Naše obiteljsko poljoprivredno gospodarstvo Škarica
+          je posvećeno pružanju vrhunskih proizvoda koji potiču zdravu prehranu
+          i podržavaju lokalnu zajednicu.
+        </p>
       </div>
 
-      <div className="map" data-aos="fade-left" id="lokacija">
-        <MapContainer
-          center={position}
-          zoom={15}
-          style={{ height: "100%", minHeight: "100%" }}
-          scrollWheelZoom={false}
-          dragging={false}
-        >
-          <TileLayer
-            className="slika"
-            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-          />
-          <Marker position={position}>
-            <Popup>Ovdje se nalazi naš OPG</Popup>
-          </Marker>
-        </MapContainer>
+      <div className="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d6895.109857864509!2d15.69242294227671!3d45.51198778331564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDXCsDMwJzM3LjUiTiAxNcKwNDEnMzYuMyJF!5e1!3m2!1shr!2shr!4v1684430448487!5m2!1shr!2shr"
+          style={{ border: "0" }}
+          allowFullScreen=""
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          title="map"
+        ></iframe>
       </div>
+
+      <Contact />
     </div>
   );
 };

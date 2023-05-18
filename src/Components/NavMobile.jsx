@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faX, faBars } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
-const Hamburger = ({ isOpen, setOpen }) => {
+const NavMobile = ({ isOpen, setOpen }) => {
   const navHandler = () => {
     setOpen(!isOpen);
   };
@@ -38,20 +38,10 @@ const Hamburger = ({ isOpen, setOpen }) => {
               </Link>
             </li>
             <li>
-              <Link to="./#onama" onClick={closeHandler}>
+              <Link to="./onama" onClick={closeHandler}>
                 O nama
               </Link>
             </li>
-            <li>
-              <Link to="./#naruci" onClick={closeHandler}>
-                Naruči odmah
-              </Link>
-            </li>
-            <Link to="/proizvodi">
-              <li className="gal" onClick={closeHandler}>
-                Proizvodi
-              </li>
-            </Link>
           </ul>
         </nav>
       </div>
@@ -59,4 +49,4 @@ const Hamburger = ({ isOpen, setOpen }) => {
   );
 };
 
-export default Hamburger;
+export default NavMobile;

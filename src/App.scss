@@ -270,47 +270,36 @@ a {
   text-decoration: none;
   color: $grey;
 }
-.location-container {
+.about-container {
   overflow-x: hidden;
-  background-color: $grey;
-  color: $cream;
+  //background-color: $grey;
+  color: $grey;
   margin: 0 auto;
 
+  & .map-container {
+    margin: 0 auto;
+    width: fit-content;
+    & iframe {
+      width: 310px;
+      height: 350px;
+    }
+  }
   .info {
-    font-size: 4vw;
-    width: 80%;
-    margin: 40px auto;
-    padding-top: 50px;
-    color: $orange;
-
-    .icon {
-      margin-top: 3px;
-      float: left;
+    max-width: 1300px;
+    margin: 0px auto;
+    .title {
+      padding: 10px;
+      text-align: center;
+      font-size: 25px;
+      margin-bottom: 1rem;
+      color: $grey;
     }
-
-    h3 {
-      font-size: 5vw;
-    }
-
-    .info-address {
-      padding-bottom: 10px;
-
-      h3 {
-        font-size: 7vw;
-        color: $cream;
-      }
-      .icon {
-        margin-top: 13px;
-        font-size: 2.5em;
-      }
-    }
-
-    .info-phone {
-      padding: 5px;
-      color: $orange;
-      a {
-        color: $cream;
-      }
+    p {
+      font-size: 18px;
+      padding: 3px 15px;
+      margin: 10px auto;
+      text-align: justify;
+      line-height: 1.3;
     }
   }
 
@@ -441,6 +430,7 @@ a {
     text-align: center;
     font-size: 30px;
     margin-bottom: 1rem;
+    color: $grey;
   }
   .products-container {
     display: flex;
@@ -565,37 +555,31 @@ a {
       font-size: 1.1vw;
     }
   }
-  .location-container {
+  .about-container {
+    & .map-container {
+      & iframe {
+        width: 1200px;
+        height: 450px;
+      }
+    }
     .info {
-      font-size: 2vw;
-      width: 80%;
+      font-size: 40px;
+      max-width: 1300px;
       margin: 40px auto;
       padding-top: 50px;
-
-      h3 {
-        font-size: 2vw;
-      }
-
-      .info-address {
-        display: flex;
+      .title {
+        border-radius: 15px;
         padding: 10px;
-        h3 {
-          font-size: 2.2vw;
-        }
-        p {
-          width: auto;
-          padding-left: 10px;
-          padding-top: 10px;
-          font-size: 1.5vw;
-        }
-        .icon {
-          font-size: 1em;
-          margin-top: 0px;
-        }
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 1rem;
+        color: $grey;
       }
-
-      .info-phone {
-        padding: 10px;
+      p {
+        font-size: 24px;
+        margin: 20px auto;
+        text-align: justify;
+        line-height: 1.6;
       }
     }
   }
