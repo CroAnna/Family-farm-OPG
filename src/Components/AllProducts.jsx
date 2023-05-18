@@ -1,18 +1,18 @@
 import React from "react";
-import Recipe from "./Product";
+import Product from "./Product";
 import { productList } from "../Data/products";
 
 const AllProducts = () => {
   return (
-    <div className="recipes">
+    <div className="products">
       <h2 className="title">Istražite sve naše proizvode:</h2>
-      <div className="recipes-container">
-        {productList.map((recept, index) => (
-          <Recipe
-            name={recept.name}
-            image={recept.image}
-            key={recept.name}
-            id={recept.id}
+      <div className="products-container">
+        {productList.map((item, index) => (
+          <Product
+            name={item.name}
+            image={item.image}
+            key={item.name}
+            id={item.id}
           />
         ))}
       </div>

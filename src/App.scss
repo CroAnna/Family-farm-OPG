@@ -1,21 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Montserrat&family=Quicksand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap");
 
-// dodaj ono animacija teksta da se mijenja na naslovnoj bez stetnih dodataka, korisne pri zdravlju il tak nekaj
-// ILI da se prebacuju slike na naslovnoj stranici
-// lavanda ko akcija
-// onaj toast kad uspjesno posaljes mail
-// loader na galeriju onak dok se ono ne rendera lijepo
-
-:root {
-  --darkgreen: #94b49f;
-  --lightgreen: #cee5d0;
-  --cream: #fcf8e8;
-  --orange: #ecb390;
-  --darkorange: #e9894e;
-  --lightorange: #ffd5bbb2;
-  --grey: #383838;
-}
+// Color Variables
+$darkgreen: #94b49f;
+$lightgreen: #cee5d0;
+$cream: #fcf8e8;
+$orange: #ecb390;
+$darkorange: #e9894e;
+$lightorange: #ffd5bbb2;
+$grey: #383838;
 
 * {
   margin: 0;
@@ -34,22 +27,22 @@
 }
 
 body {
-  background-color: var(--cream);
+  background-color: $cream;
 }
 
 .header {
-  & h1 {
+  h1 {
     font-family: "Shadows Into Light Two", cursive;
     font-size: 8vw;
     padding: 5px;
     text-align: center;
   }
-  & h3 {
+  h3 {
     margin-bottom: 20px;
     text-align: center;
   }
-  & .mobile {
-    & .iconBar {
+  .mobile {
+    .iconBar {
       &.abs {
         position: absolute;
         z-index: 1;
@@ -57,10 +50,10 @@ body {
       &.fixed {
         position: absolute;
       }
-      background-color: var(--grey);
+      background-color: $grey;
       width: 20px;
       height: 20px;
-      color: var(--lightgreen);
+      color: $lightgreen;
       font-size: 1.5rem;
       padding: 20px;
       border-radius: 10px;
@@ -68,14 +61,14 @@ body {
       margin-top: 10px;
       cursor: pointer;
     }
-    & .nav-bar {
-      background-color: var(--lightgreen);
+    .nav-bar {
+      background-color: $lightgreen;
       position: relative;
     }
-    & ul {
-      background-color: var(--lightgreen);
+    ul {
+      background-color: $lightgreen;
       margin-bottom: 20px;
-      & li {
+      li {
         list-style: none;
         text-align: center;
         font-size: x-large;
@@ -84,14 +77,14 @@ body {
           width: 100%;
           display: block;
         }
-        & a {
+        a {
           padding: 20px;
           width: 100%;
           display: block;
         }
 
         &:hover {
-          background-color: var(--darkgreen);
+          background-color: $darkgreen;
           transition: 0.5s;
         }
       }
@@ -102,21 +95,21 @@ body {
       display: none;
     }
   }
-  & .desktop {
+  .desktop {
     display: none;
     @media screen and (min-width: 1200px) {
-      & .navbar-container {
+      .navbar-container {
         display: flex;
-        background-color: var(--lightgreen);
+        background-color: $lightgreen;
         justify-content: space-around;
       }
       display: block;
-      & ul {
+      ul {
         margin-top: 5px;
         display: flex;
 
         //background-color: red;
-        & li {
+        li {
           list-style: none;
           text-align: center;
           font-size: x-large;
@@ -126,13 +119,13 @@ body {
             width: 100%;
             display: block;
           }
-          & a {
+          a {
             padding: 20px;
             width: 100%;
           }
 
           &:hover {
-            background-color: var(--darkgreen);
+            background-color: $darkgreen;
             transition: 0.5s;
           }
         }
@@ -143,16 +136,16 @@ body {
 
 .cover {
   position: relative;
-  & img {
+  img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
-  & .cover-img {
+  .cover-img {
     width: 100%;
     height: 100%;
   }
-  & .cover-overlay {
+  .cover-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -160,20 +153,20 @@ body {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
   }
-  & .cover-text {
+  .cover-text {
     //background-color: greenyellow;
     position: absolute;
     top: 50%;
     left: 50%;
     width: 90%;
     transform: translate(-50%, -50%);
-    & h2 {
+    h2 {
       color: #fff;
       font-size: 6vw;
       //width: 80%;
     }
-    & h4 {
-      color: var(--cream);
+    h4 {
+      color: $cream;
       font-size: 3vw;
     }
   }
@@ -189,32 +182,32 @@ body {
   margin: 10px;
   border-radius: 15px;
 
-  & .images {
+  .images {
     padding: 10px;
   }
-  & img {
+  img {
     width: 100%;
     border-radius: 10px;
     padding: 5px;
   }
-  & h2 {
+  h2 {
     font-size: 8vw;
     font-family: "Montserrat", sans-serif;
     text-align: center;
     padding-top: 15px;
-    color: var(--grey);
-    text-shadow: 21x 1px 2px var(--grey);
+    color: $grey;
+    text-shadow: 21x 1px 2px $grey;
   }
 }
 .proizvodi-outer-container {
-  & h3 {
+  h3 {
     text-align: center;
     margin: 40px auto;
     font-size: 40px;
-    color: var(--grey);
+    color: $grey;
   }
-  & .proizvodi-container {
-    background-color: var(--darkgreen);
+  .proizvodi-container {
+    background-color: $darkgreen;
     max-width: 1440px;
     width: 80%;
     margin: 0 auto;
@@ -224,14 +217,14 @@ body {
 .btn-gallery {
   text-align: center;
   margin: 25px;
-  & button {
-    background-color: var(--lightgreen);
+  button {
+    background-color: $lightgreen;
     font-size: 6vw;
     padding: 20px 30px;
     border-radius: 10px;
     cursor: pointer;
     &:hover {
-      background-color: var(--darkgreen);
+      background-color: $darkgreen;
       transition: 0.5s;
     }
   }
@@ -239,95 +232,95 @@ body {
 
 .detaljnije {
   margin: 15px;
-  color: var(--grey);
+  color: $grey;
   font-size: 18px;
   padding: 20px;
-  background-color: var(--lightgreen);
-  & .detaljnije-image {
+  background-color: $lightgreen;
+  .detaljnije-image {
     width: 100%;
     border-radius: 10px;
   }
-  & h2 {
+  h2 {
     text-align: center;
     padding-bottom: 15px;
   }
-  & p {
+  p {
     padding: 7px;
   }
 }
 
 .footer {
-  background-color: var(--grey);
+  background-color: $grey;
   // font-size: 20px;
   font-size: 6vw;
   padding: 20px 20px 30px 20px;
-  & p {
+  p {
     padding: 8px 10px;
-    color: var(--cream);
-    & a {
-      color: var(--cream);
+    color: $cream;
+    a {
+      color: $cream;
     }
   }
-  & span {
-    color: var(--orange);
+  span {
+    color: $orange;
   }
 }
 
 a {
   text-decoration: none;
-  color: var(--grey);
+  color: $grey;
 }
 .location-container {
   overflow-x: hidden;
-  background-color: var(--grey);
-  color: var(--cream);
+  background-color: $grey;
+  color: $cream;
   margin: 0 auto;
 
-  & .info {
+  .info {
     font-size: 4vw;
     width: 80%;
     margin: 40px auto;
     padding-top: 50px;
-    color: var(--orange);
+    color: $orange;
 
-    & .icon {
+    .icon {
       margin-top: 3px;
       float: left;
     }
 
-    & h3 {
+    h3 {
       font-size: 5vw;
     }
 
-    & .info-address {
+    .info-address {
       padding-bottom: 10px;
 
-      & h3 {
+      h3 {
         font-size: 7vw;
-        color: var(--cream);
+        color: $cream;
       }
-      & .icon {
+      .icon {
         margin-top: 13px;
         font-size: 2.5em;
       }
     }
 
-    & .info-phone {
+    .info-phone {
       padding: 5px;
-      color: var(--orange);
-      & a {
-        color: var(--cream);
+      color: $orange;
+      a {
+        color: $cream;
       }
     }
   }
 
-  & .map {
+  .map {
     width: 80%;
     margin: 10px auto;
-    background-color: var(--grey);
+    background-color: $grey;
     height: 600px;
     padding-bottom: 50px;
-    & .slika {
+    .slika {
       height: 160px;
     }
   }
@@ -335,50 +328,50 @@ a {
 .kontakt {
   margin: 50px auto;
 
-  & h2 {
+  h2 {
     text-align: center;
     font-size: 40px;
   }
 
-  & form {
-    & input {
+  form {
+    input {
       display: block;
       margin: 20px auto;
       padding: 10px;
-      border: 2px solid var(--darkgreen);
+      border: 2px solid $darkgreen;
       border-radius: 8px;
       width: 80%;
       font-size: 1.5rem;
     }
 
-    & textarea {
+    textarea {
       display: block;
       margin: 20px auto;
       padding: 10px;
-      border: 2px solid var(--darkgreen);
+      border: 2px solid $darkgreen;
       border-radius: 8px;
       width: 80%;
       font-size: 1.5rem;
       resize: none;
     }
 
-    & ::placeholder {
+    ::placeholder {
       font-size: 24px;
     }
 
-    & button {
+    button {
       font-size: 30px;
       width: 45%;
       border-radius: 10px;
       padding: 15px;
-      background-color: var(--orange);
-      color: var(--grey);
+      background-color: $orange;
+      color: $grey;
       font-weight: 900;
       display: block;
       margin: 20px auto;
       box-shadow: 2px 3px 4px;
       &:hover {
-        background-color: var(--darkorange);
+        background-color: $darkorange;
         transform: scale(1.1);
         transition: 0.3s ease-in;
       }
@@ -389,18 +382,18 @@ a {
 .galerija-container {
   width: 95%;
   margin: 20px auto;
-  & .grupa {
-    background-color: var(--lightorange);
+  .grupa {
+    background-color: $lightorange;
     border-radius: 15px;
     padding: 10px;
     height: 350px;
     margin: 20px 0;
-    & h2 {
+    h2 {
       text-align: center;
       font-size: 2.5rem;
     }
 
-    & img {
+    img {
       max-height: 220px;
       max-width: 100%;
       padding: 5px;
@@ -409,11 +402,11 @@ a {
     }
   }
 
-  & .arrow {
+  .arrow {
     font-size: 50px;
     padding: 5px;
     cursor: pointer;
-    color: var(--lightgrey);
+    color: $grey;
     height: 220px;
     display: flex;
     align-items: center;
@@ -426,7 +419,7 @@ a {
   position: relative;
   height: 0;
   margin-top: 20px;
-  & iframe {
+  iframe {
     left: 0;
     top: 0;
     height: 100%;
@@ -441,15 +434,15 @@ a {
   margin: 0 auto 30px;
 }
 
-.recipes {
-  & .title {
+.products {
+  .title {
     border-radius: 15px;
     padding: 10px;
     text-align: center;
     font-size: 30px;
     margin-bottom: 1rem;
   }
-  & .recipes-container {
+  .products-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -460,16 +453,16 @@ a {
 }
 .product {
   margin: 0.5em;
-  & .darken {
+  .darken {
     filter: brightness(60%);
   }
-  & .image-container {
+  .image-container {
     width: 200px;
     height: 200px;
     cursor: pointer;
     position: relative;
     text-align: center;
-    & .overlay {
+    .overlay {
       position: absolute;
       color: white;
       font-weight: bold;
@@ -480,7 +473,7 @@ a {
     }
   }
 
-  & img {
+  img {
     padding: 0;
     width: 100%;
     height: 100%;
@@ -493,27 +486,27 @@ a {
   width: 70%;
   width: 90%;
   margin: 0 auto;
-  & .info {
+  .info {
     padding: 10px;
-    & h2 {
+    h2 {
       padding: 10px;
       margin: 10px;
       font-size: 6vw;
       text-align: center;
     }
-    & .info-content {
+    .info-content {
       margin: 0px 0;
       padding: 5px;
 
-      & p {
+      p {
         font-size: 4vw;
         text-align: center;
       }
     }
-    & .info-photo {
+    .info-photo {
       text-align: center;
     }
-    & img {
+    img {
       width: 100%;
       border-radius: 10px;
     }
@@ -523,19 +516,19 @@ a {
 // DESKTOP
 @media screen and (min-width: 961px) {
   .header {
-    & h1 {
+    h1 {
       font-size: 40px;
       margin: 8px;
     }
   }
   .cover {
     margin-bottom: 80px;
-    & .cover-text {
+    .cover-text {
       width: 900px;
-      & h2 {
+      h2 {
         font-size: 96px;
       }
-      & h4 {
+      h4 {
         font-size: 24px;
       }
     }
@@ -543,10 +536,10 @@ a {
   .images-container {
     margin: 80px auto;
 
-    & h2 {
+    h2 {
       font-size: 5vw;
     }
-    & img {
+    img {
       width: 33%;
     }
   }
@@ -561,60 +554,60 @@ a {
   }
 
   .btn-gallery {
-    & button {
+    button {
       padding: 25px 70px;
       font-size: 40px;
     }
   }
   .detaljnije {
     border-radius: 15px;
-    & p {
+    p {
       font-size: 1.1vw;
     }
   }
   .location-container {
-    & .info {
+    .info {
       font-size: 2vw;
       width: 80%;
       margin: 40px auto;
       padding-top: 50px;
 
-      & h3 {
+      h3 {
         font-size: 2vw;
       }
 
-      & .info-address {
+      .info-address {
         display: flex;
         padding: 10px;
-        & h3 {
+        h3 {
           font-size: 2.2vw;
         }
-        & p {
+        p {
           width: auto;
           padding-left: 10px;
           padding-top: 10px;
           font-size: 1.5vw;
         }
-        & .icon {
+        .icon {
           font-size: 1em;
           margin-top: 0px;
         }
       }
 
-      & .info-phone {
+      .info-phone {
         padding: 10px;
       }
     }
   }
 
   .kontakt {
-    & form {
+    form {
       width: 800px;
       margin: 20px auto;
-      & input {
+      input {
         width: 90%;
       }
-      & textarea {
+      textarea {
         width: 90%;
       }
     }
@@ -627,18 +620,18 @@ a {
   }
   .galerija-container {
     width: 70%;
-    & .grupa {
+    .grupa {
       padding: 15px;
       height: 480px;
 
-      & img {
+      img {
         padding: 15px;
         max-height: 400px;
         max-width: 100%;
         border-radius: 30px;
       }
     }
-    & .arrow {
+    .arrow {
       height: 410px;
       font-size: 40px;
       cursor: pointer;
@@ -647,16 +640,16 @@ a {
 
   .footer {
     font-size: 20px;
-    & p {
+    p {
       padding: 10px;
     }
   }
   .product {
-    & .image-container {
+    .image-container {
       width: 400px;
       height: 400px;
       transform: scale(1);
-      & .overlay {
+      .overlay {
         font-size: 1.7vw;
         letter-spacing: 4px;
         text-shadow: 2px 2px 20px #000;
@@ -664,39 +657,39 @@ a {
     }
   }
 
-  .recipes {
+  .products {
     width: 70%;
     margin: 0 auto;
-    & .title {
+    .title {
       font-size: 40px;
       margin-top: 20px;
     }
-    & .recipes-container {
+    .products-container {
       flex-direction: row;
       width: auto;
     }
   }
 
   .product-info {
-    & .info {
-      & h2 {
+    .info {
+      h2 {
         padding: 20px;
         font-size: 40px;
         border-radius: 15px;
       }
-      & .info-photo {
+      .info-photo {
         margin: 0 auto;
       }
-      & img {
+      img {
         width: 40%;
         margin: 0 auto;
         border-radius: 10px;
       }
-      & .info-content {
+      .info-content {
         margin: 0px auto;
         padding: 10px;
         width: fit-content;
-        & p {
+        p {
           font-size: 24px;
           width: 500px;
         }
@@ -711,12 +704,12 @@ a {
 @media screen and (min-width: 1600px) {
   .cover {
     margin-bottom: 80px;
-    & .cover-text {
+    .cover-text {
       width: 1440px;
-      & h2 {
+      h2 {
         font-size: 76px;
       }
-      & h4 {
+      h4 {
         font-size: 24px;
       }
     }
