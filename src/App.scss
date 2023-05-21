@@ -206,14 +206,14 @@ body {
     text-shadow: 21x 1px 2px $grey;
   }
 }
-.proizvodi-outer-container {
+.products-outer-container {
   h3 {
     text-align: center;
     margin: 40px auto;
     font-size: 40px;
     color: $grey;
   }
-  .proizvodi-container {
+  .products-container {
     background-color: $darkgreen;
     max-width: 1440px;
     width: 80%;
@@ -237,13 +237,13 @@ body {
   }
 }
 
-.detaljnije {
+.detailed {
   margin: 15px;
   color: $grey;
   font-size: 18px;
   padding: 20px;
   background-color: $lightgreen;
-  .detaljnije-image {
+  .detailed-image {
     width: 100%;
     border-radius: 10px;
   }
@@ -321,7 +321,7 @@ a {
     }
   }
 }
-.kontakt {
+.contact {
   margin: 50px auto;
 
   h2 {
@@ -375,10 +375,10 @@ a {
   }
 }
 
-.galerija-container {
+.gallery-container {
   width: 95%;
   margin: 20px auto;
-  .grupa {
+  .group {
     background-color: $lightorange;
     border-radius: 15px;
     padding: 10px;
@@ -425,7 +425,7 @@ a {
   }
 }
 
-.dodatno {
+.more {
   width: 95%;
   margin: 0 auto 30px;
 }
@@ -540,7 +540,7 @@ a {
       width: 33%;
     }
   }
-  .proizvodi-container {
+  .products-container {
     display: flex;
     flex-direction: row;
     //flex-wrap: wrap;
@@ -556,7 +556,7 @@ a {
       font-size: 40px;
     }
   }
-  .detaljnije {
+  .detailed {
     border-radius: 15px;
     p {
       font-size: 1.1vw;
@@ -591,7 +591,7 @@ a {
     }
   }
 
-  .kontakt {
+  .contact {
     form {
       width: 800px;
       margin: 20px auto;
@@ -604,14 +604,14 @@ a {
     }
   }
 
-  .detaljnije {
+  .detailed {
     width: 30%;
     min-width: 280px;
     font-size: 24px;
   }
-  .galerija-container {
+  .gallery-container {
     width: 70%;
-    .grupa {
+    .group {
       padding: 15px;
       height: 480px;
 
@@ -703,7 +703,7 @@ a {
       }
     }
   }
-  .dodatno {
+  .more {
     width: 50%;
   }
 }

@@ -2,7 +2,7 @@ import React from "react";
 
 const Video = () => {
   return (
-    <div className="dodatno">
+    <div className="more">
       <div className="video-responsive">
         <iframe
           width="560"

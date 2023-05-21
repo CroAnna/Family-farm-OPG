@@ -58,11 +58,11 @@ export default class ImageSlider extends Component {
 
     const selectedGroup = imageGroups[itemName] || [];
     return (
-      <div className="galerija-container">
-        <div className="grupa">
+      <div className="gallery-container">
+        <div className="group">
           <Slider {...settings} style={{ display: "flex" }}>
             {selectedGroup.map((item, index) => (
-              <div key={index} className="slike">
+              <div key={index}>
                 <img src={item.slika} alt="" />
               </div>
             ))}

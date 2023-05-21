@@ -42,7 +42,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="kontakt" data-aos="fade-down" data-aos-anchor=".t-area">
+    <div className="contact" data-aos="fade-down" data-aos-anchor=".t-area">
       <h2>Naruči odmah:</h2>
       <form onSubmit={sendEmail} ref={form} netlify="true">
         <span id="naruci"></span>

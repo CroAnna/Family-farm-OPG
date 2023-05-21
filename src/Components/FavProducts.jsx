@@ -6,9 +6,9 @@ import { faArrowCircleRight } from "@fortawesome/free-solid-svg-icons";
 
 const FavProducts = () => {
   return (
-    <div className="proizvodi-outer-container">
+    <div className="products-outer-container">
       <h3>Najpopularniji proizvodi</h3>
-      <div className="proizvodi-container" id="proizvodi">
+      <div className="products-container" id="proizvodi">
         {productList.map(
           (product, index) =>
             index < 3 && (

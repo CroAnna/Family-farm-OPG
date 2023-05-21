@@ -8,10 +8,10 @@ const FavProduct = ({ name, price, about, image }) => {
     Aos.init({ duration: 1500, offset: 0, anchorPlacement: "top" });
   }, []);
   return (
-    <div className="detaljnije" data-aos="fade-up">
+    <div className="detailed" data-aos="fade-up">
       <h2>{name}</h2>
       <Link to="/proizvodi">
-        <img src={image} alt={image} className="detaljnije-image" />
+        <img src={image} alt={image} className="detailed-image" />
       </Link>
       <p>
         Cijena: <b>{price}</b>
