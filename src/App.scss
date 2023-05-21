@@ -102,6 +102,13 @@ body {
         display: flex;
         background-color: $lightgreen;
         justify-content: space-around;
+        a {
+          display: flex;
+          align-items: center; // vertical align image
+          img {
+            height: 70px;
+          }
+        }
       }
       display: block;
       ul {

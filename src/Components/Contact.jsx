@@ -30,11 +30,11 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          // console.log(result.text);
           success_();
         },
         (error) => {
-          console.log(error.text);
+          // console.log(error.text);
           error_();
         }
       );

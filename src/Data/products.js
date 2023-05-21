@@ -22,7 +22,7 @@ export const productList = [
     id: "lavanda",
   },
   {
-    name: "Butternut tikve 🆕",
+    name: "Butternut tikve",
     price: "2 EUR/kg",
     about:
       "Butternut tikva je pravi dar prirode, bogata vitaminima A i C, kalijem, magnezijem i vlaknima. Njeno narančasto meso, slatkastog okusa s notama lješnjaka, čini je idealnim sastojkom za pripremu krem juha, pirea, pita i ostalih slatkih jela. Osim svoje izvrsne nutritivne vrijednosti, ova tikva također se ističe svojim protuupalnim djelovanjem i niskom kaloričnošću, što je čini omiljenim izborom za one koji žele održavati zdravu težinu. Uživajte u njenom jedinstvenom okusu i dodajte zdravu raznolikost svojoj prehrani.",

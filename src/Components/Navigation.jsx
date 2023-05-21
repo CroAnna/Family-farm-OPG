@@ -15,11 +15,12 @@ const Navigation = () => {
       <div className="desktop">
         <NavDesktop />
       </div>
-
       <div className="mobile" onClick={navHandler}>
         <NavMobile isOpen={isOpen} setOpen={setOpen} />
         <Link to="/">
-          <h1>OPG Škarica</h1>
+          <div className="row">
+            <h1>OPG Škarica</h1>
+          </div>
           <h3>Zdravo je, domaće je</h3>
         </Link>
       </div>
