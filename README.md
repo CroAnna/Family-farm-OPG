@@ -9,7 +9,7 @@ Contains of 2 types of routes: index page and gallery.
 Desktop and mobile version - responsive design. Navigation bar design depends on screen width - mobile version has hamburger menu and desktop standard horizontal menu.
 
 
-You can see the final page on link: [www.opgskarica.com](https://www.opgskarica.com/)
+You can see the final page on link: [opg-skarica.netlify.app/](https://opg-skarica.netlify.app/)
 
 Starting protoype: https://www.figma.com/file/NiWH62261T56Yn1uM7HU1m/OPG-stranica?node-id=0%3A1&t=JY81w1R2xmFZOx4R-1 
 
